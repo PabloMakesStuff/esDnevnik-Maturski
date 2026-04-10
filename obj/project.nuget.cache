@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lubVd/IE+ps=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vasic\\source\\repos\\Maturski\\Maturski.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vasic\\.nuget\\packages\\system.data.oledb\\10.0.5\\system.data.oledb.10.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

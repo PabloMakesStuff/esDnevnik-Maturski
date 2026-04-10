@@ -28,18 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            flowpanelMain = new FlowLayoutPanel();
             SuspendLayout();
+            // 
+            // IzostanciBTN
+            // 
+            IzostanciBTN.Click += IzostanciBTN_Click;
+            // 
+            // OceneBTN
+            // 
+            OceneBTN.Click += OceneBTN_Click;
+            // 
+            // PocetakBTN
+            // 
+            PocetakBTN.Click += PocetakBTN_Click;
+            // 
+            // flowpanelMain
+            // 
+            flowpanelMain.Anchor = AnchorStyles.None;
+            flowpanelMain.AutoScroll = true;
+            flowpanelMain.BackColor = SystemColors.ActiveCaption;
+            flowpanelMain.Location = new Point(347, 235);
+            flowpanelMain.Name = "flowpanelMain";
+            flowpanelMain.Size = new Size(729, 765);
+            flowpanelMain.TabIndex = 1;
             // 
             // UcenikForm
             // 
+            AllowDrop = true;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
+            Controls.Add(flowpanelMain);
             Name = "UcenikForm";
             Text = "UcenikForm";
+            Controls.SetChildIndex(flowpanelMain, 0);
             ResumeLayout(false);
         }
 
         #endregion
+        private TextBox textBox1;
+        private FlowLayoutPanel flowpanelMain;
     }
 }

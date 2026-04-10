@@ -14,5 +14,5 @@ namespace Maturski
         {
             InitializeComponent();
         }
-    }
+    } 
 }

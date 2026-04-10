@@ -24,3 +24,5 @@ C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Registar
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Properties.Resources.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.BaseForm.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.UcenikForm.resources
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.sourcelink.json
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.OceneCard.resources

@@ -92,13 +92,13 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // UcenikPocetak
+            // BaseForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
             Controls.Add(panelTop);
-            Name = "UcenikPocetak";
+            Name = "BaseForm";
             Text = "esDnevnik(Ucenik)";
             panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -109,8 +109,8 @@
 
         private Panel panelTop;
         private PictureBox pictureBox1;
-        private Button IzostanciBTN;
-        private Button OceneBTN;
-        private Button PocetakBTN;
+        protected Button IzostanciBTN;
+        protected Button OceneBTN;
+        protected Button PocetakBTN;
     }
 }

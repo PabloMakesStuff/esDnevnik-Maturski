@@ -1,3 +1,5 @@
+using System.Drawing.Drawing2D;
+
 namespace Maturski
 {
     internal static class Program
@@ -30,6 +32,25 @@ namespace Maturski
 
             f2.Show();
             f1.Hide();
+        }
+
+
+
+        public static void SetRoundedRegion(Control control, int radius)
+        {
+            Rectangle bounds = new Rectangle(0, 0, control.Width, control.Height);
+            int diameter = radius * 2;
+
+            GraphicsPath path = new GraphicsPath();
+
+            path.AddArc(bounds.X, bounds.Y, diameter, diameter, 180, 90);
+            path.AddArc(bounds.Right - diameter, bounds.Y, diameter, diameter, 270, 90);
+            path.AddArc(bounds.Right - diameter, bounds.Bottom - diameter, diameter, diameter, 0, 90);
+            path.AddArc(bounds.X, bounds.Bottom - diameter, diameter, diameter, 90, 90);
+
+            path.CloseFigure();
+
+            control.Region = new Region(path);
         }
     }
 }

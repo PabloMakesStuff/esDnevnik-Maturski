@@ -1,5 +1,8 @@
+using System.ComponentModel;
 using System.Data.OleDb;
 using System.Security.Cryptography.X509Certificates;
+using static System.Windows.Forms.DataFormats;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Maturski
 {
@@ -13,6 +16,7 @@ namespace Maturski
             Email.Text = "djdj@gmail.com";
             Sifra.Text = "12345";
         }
+        public static int ID_ucenik { get; set; }
 
         private void LoginBTN_Click(object sender, EventArgs e)
         {
@@ -45,6 +49,7 @@ namespace Maturski
 
                     //UcenikForm f = new UcenikForm(ucenik);
                     FM.OpenForm(this, new UcenikForm());
+                    ID_ucenik = refId;
                 }
 
                 else if (status == "profesor")

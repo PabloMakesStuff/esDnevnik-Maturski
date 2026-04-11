@@ -53,6 +53,7 @@
             flowpanelMain.BackColor = SystemColors.ActiveCaption;
             flowpanelMain.Location = new Point(347, 235);
             flowpanelMain.Name = "flowpanelMain";
+            flowpanelMain.Padding = new Padding(10);
             flowpanelMain.Size = new Size(729, 765);
             flowpanelMain.TabIndex = 1;
             // 

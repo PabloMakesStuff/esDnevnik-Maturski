@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Maturski
 {
-    public partial class OceneCard : UserControl
+    public partial class PocetakCard : UserControl
     {
-        public OceneCard(string predmet, string opis, int ocena, string datum)
+        public PocetakCard(string predmet, string opis, int ocena, string datum)
         {
             InitializeComponent();
 

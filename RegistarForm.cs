@@ -25,7 +25,7 @@ namespace Maturski
             string email = Email.Text.Trim();
             string sifra = Sifra.Text.Trim();
 
-            if(email == null || sifra == null)
+            if(string.IsNullOrEmpty(email) || string.IsNullOrEmpty(sifra) || string.IsNullOrEmpty(prezime) || string.IsNullOrEmpty(ime))
             {
                 MessageBox.Show("Unesite email i sifru");
                 return;

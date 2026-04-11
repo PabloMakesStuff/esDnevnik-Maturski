@@ -1,6 +1,6 @@
 ﻿namespace Maturski
 {
-    partial class OceneCard
+    partial class PocetakCard
     {
         /// <summary> 
         /// Required designer variable.

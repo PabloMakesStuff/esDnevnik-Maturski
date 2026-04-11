@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Maturski")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d135b113d1ed6cedda5fb683fdeb8ca46b76f2ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33405d7fdd592c663522dcbf7803a37b10a843e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Maturski")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Maturski")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

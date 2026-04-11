@@ -52,9 +52,9 @@
             labelOpis.Font = new Font("Segoe UI", 10F);
             labelOpis.Location = new Point(236, 80);
             labelOpis.Name = "labelOpis";
-            labelOpis.Size = new Size(55, 23);
+            labelOpis.Size = new Size(80, 23);
             labelOpis.TabIndex = 1;
-            labelOpis.Text = "label1";
+            labelOpis.Text = "labelOpis";
             // 
             // labelPredmet
             // 

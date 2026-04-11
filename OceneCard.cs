@@ -16,6 +16,7 @@ namespace Maturski
 
             labelPredmet.Text = predmet;
             labelOpis.Text = opis;
+            labelOpis.MaximumSize = new Size(300, 0);
             labelOcene.Text = ocena.ToString();
             labelDatum.Text = datum;
         }

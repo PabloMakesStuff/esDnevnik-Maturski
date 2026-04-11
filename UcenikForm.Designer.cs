@@ -33,14 +33,17 @@
             // 
             // IzostanciBTN
             // 
+            IzostanciBTN.Font = new Font("Segoe UI", 12F);
             IzostanciBTN.Click += IzostanciBTN_Click;
             // 
             // OceneBTN
             // 
+            OceneBTN.Font = new Font("Segoe UI", 12F);
             OceneBTN.Click += OceneBTN_Click;
             // 
             // PocetakBTN
             // 
+            PocetakBTN.Font = new Font("Segoe UI", 12F);
             PocetakBTN.Click += PocetakBTN_Click;
             // 
             // flowpanelMain

@@ -19,10 +19,13 @@ namespace Maturski
         {
             InitializeComponent();
             int ID_ucenik = LoginForm.ID_ucenik;
+            PocetakBTN_Click(null, null);
         }
 
-        private void PocetakBTN_Click(object sender, EventArgs e)
+        // dodati upitnici da bi kompajler ucutao
+        private void PocetakBTN_Click(object? sender, EventArgs? e)
         {
+            ButtonChange(PocetakBTN);
             flowpanelMain.Controls.Clear();
 
             // otvara konekciju sa serverom i cita iz base
@@ -61,12 +64,23 @@ namespace Maturski
 
         private void OceneBTN_Click(object sender, EventArgs e)
         {
+            ButtonChange(OceneBTN);
             flowpanelMain.Controls.Clear();
         }
 
         private void IzostanciBTN_Click(object sender, EventArgs e)
         {
+            ButtonChange(IzostanciBTN);
             flowpanelMain.Controls.Clear();
+        }
+
+        public void ButtonChange(System.Windows.Forms.Button btn)
+        {
+            PocetakBTN.Font = FM.btnFont;
+            OceneBTN.Font = FM.btnFont;       
+            IzostanciBTN.Font = FM.btnFont;
+
+            btn.Font = new Font("Arial", 12, FontStyle.Bold | FontStyle.Italic);
         }
     }
 }

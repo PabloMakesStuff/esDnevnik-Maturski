@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panelTop = new Panel();
+            logoutBTN = new Button();
             IzostanciBTN = new Button();
             OceneBTN = new Button();
             PocetakBTN = new Button();
@@ -41,6 +42,7 @@
             // 
             panelTop.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelTop.BackColor = SystemColors.ControlDark;
+            panelTop.Controls.Add(logoutBTN);
             panelTop.Controls.Add(IzostanciBTN);
             panelTop.Controls.Add(OceneBTN);
             panelTop.Controls.Add(PocetakBTN);
@@ -49,6 +51,16 @@
             panelTop.Name = "panelTop";
             panelTop.Size = new Size(1424, 209);
             panelTop.TabIndex = 0;
+            // 
+            // logoutBTN
+            // 
+            logoutBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            logoutBTN.Location = new Point(1300, 12);
+            logoutBTN.Name = "logoutBTN";
+            logoutBTN.Size = new Size(94, 56);
+            logoutBTN.TabIndex = 4;
+            logoutBTN.Text = "Izloguj se";
+            logoutBTN.UseVisualStyleBackColor = true;
             // 
             // IzostanciBTN
             // 
@@ -112,5 +124,6 @@
         protected Button IzostanciBTN;
         protected Button OceneBTN;
         protected Button PocetakBTN;
+        protected Button logoutBTN;
     }
 }

@@ -71,13 +71,13 @@
             labelDatum.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             labelDatum.AutoSize = true;
             labelDatum.Font = new Font("Segoe UI", 15F);
-            labelDatum.Location = new Point(536, 165);
+            labelDatum.Location = new Point(511, 161);
             labelDatum.Name = "labelDatum";
             labelDatum.Size = new Size(81, 35);
             labelDatum.TabIndex = 3;
             labelDatum.Text = "label1";
             // 
-            // OceneCard
+            // PocetakCard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -86,8 +86,8 @@
             Controls.Add(labelPredmet);
             Controls.Add(labelOpis);
             Controls.Add(labelOcene);
-            Name = "OceneCard";
-            Size = new Size(620, 200);
+            Name = "PocetakCard";
+            Size = new Size(595, 196);
             ResumeLayout(false);
             PerformLayout();
         }

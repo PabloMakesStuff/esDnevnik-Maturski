@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
@@ -19,7 +20,7 @@ namespace Maturski
         public UcenikForm()
         {
             InitializeComponent();
-            int ID_ucenik = LoginForm.ID_ucenik;
+            flowpanelMain.WrapContents = false;
         }
 
         // dodati upitnici da bi kompajler ucutao
@@ -43,7 +44,7 @@ namespace Maturski
                 string? datum = row["Datum"].ToString();
 
                 var card = new PocetakCard(predmet, opis, ocena, datum);
-                flowpanelMain.Controls.Add(card);
+                FM.AddCenteredControl(card, flowpanelMain);
             }
         }
 
@@ -52,11 +53,12 @@ namespace Maturski
             // Prvo postavlja OceneListaVrh, cista estetika
             btnFontChange(OceneBTN);
             flowpanelMain.Controls.Clear();
-            var card1 = new OceneListaVrh();
-            flowpanelMain.Controls.Add(card1);
+            FM.AddCenteredControl(new OceneListaVrh(), flowpanelMain);
 
             // zatim, trazi ocene prema ucenikid, predmet i polugodiste, pa ih prikazuje
             // ako nema ocenu (tojkest null) onda ne prikazuje nista (zbog toga : null)
+
+            //jos jedna bitna stvar, ovaj upit sortira bazu pa zbog toga mogu da radim shenanigans
             string query =
                 "SELECT p.nazivPred, o.polugodiste, o.broj_oc, o.datum, o.opis " +
                 "FROM ocene o, predmeti p " +
@@ -66,14 +68,41 @@ namespace Maturski
 
             var dt = Database.execQuery(query, new OleDbParameter("?", LoginForm.ID_ucenik));
 
+            //cnt1, cnt2 broj ocena u prvom i drugom polugodistu
+            var predmeti = new Dictionary<string, (int sum1, int cnt1, int sum2, int cnt2)>();
+
             foreach (DataRow row in dt.Rows)
             {
-                string? predmet = row["nazivPred"].ToString();
-                double? ocena1 = row["polugodiste"].ToString() == "1" ? (double?)Convert.ToInt32(row["broj_oc"]) : null;
-                double? ocena2 = row["polugodiste"].ToString() == "2" ? (double?)Convert.ToInt32(row["broj_oc"]) : null;
+                string predmet = row["nazivPred"].ToString();
+                int polugodiste = Convert.ToInt32(row["polugodiste"]);
+                int ocena = Convert.ToInt32(row["broj_oc"]);
 
-                var card = new OceneListaDonji(predmet, ocena1, ocena2);
-                flowpanelMain.Controls.Add(card);
+                //ako predmet nije upisan, onda upisuje default vrednosti
+                if (!predmeti.ContainsKey(predmet))
+                    predmeti[predmet] = (0, 0, 0, 0);
+
+                var p = predmeti[predmet];
+
+                //sumira ocene u prvom i drugom polugodistu
+                if (polugodiste == 1)
+                    p = (p.sum1 + ocena, p.cnt1 + 1, p.sum2, p.cnt2);
+                else if (polugodiste == 2)
+                    p = (p.sum1, p.cnt1, p.sum2 + ocena, p.cnt2 + 1);
+
+                //upisuje rezultate u recnik
+                predmeti[predmet] = p;
+            }
+
+            foreach (var item in predmeti)
+            {
+                string predmet = item.Key;
+
+                //u deklaraciji za varijablu pita, da li je cnt1 veci od 0, ako jeste onda ovo
+                double? prosek1 = item.Value.cnt1 > 0 ? (double)item.Value.sum1 / item.Value.cnt1 : null;
+                double? prosek2 = item.Value.cnt2 > 0 ? (double)item.Value.sum2 / item.Value.cnt2 : null;
+
+                var card = new OceneListaDonji(predmet, prosek1, prosek2);
+                FM.AddCenteredControl(card, flowpanelMain);
             }
         }
 
@@ -81,12 +110,19 @@ namespace Maturski
         {
             btnFontChange(IzostanciBTN);
             flowpanelMain.Controls.Clear();
+
+            FM.AddCenteredControl(new IzostanciListaVrh(), flowpanelMain);
+        }
+
+        private void logoutBTN_Click(object sender, EventArgs e)
+        {
+            FM.OpenForm(this, new LoginForm());
         }
 
         public void btnFontChange(System.Windows.Forms.Button btn)
         {
             PocetakBTN.Font = FM.btnFont;
-            OceneBTN.Font = FM.btnFont;       
+            OceneBTN.Font = FM.btnFont;
             IzostanciBTN.Font = FM.btnFont;
 
             btn.Font = new Font("Arial", 12, FontStyle.Bold | FontStyle.Italic);

@@ -35,5 +35,30 @@ namespace Maturski
         }
 
         public static Font btnFont = new Font("Arial", 12);
+
+
+        //centrira usercontrol sa panelom, drugacije ne znam
+        public static void AddCenteredControl(UserControl uc, FlowLayoutPanel f1)
+        {
+            int scrollbarWidth = SystemInformation.VerticalScrollBarWidth;
+
+            Panel wrapper = new Panel();
+            wrapper.Margin = new Padding(0);
+
+            wrapper.Width = f1.ClientSize.Width - f1.Padding.Horizontal - scrollbarWidth;
+
+            wrapper.Height = uc.Height;
+
+            uc.Top = 5;
+            uc.Left = (wrapper.Width - uc.Width) / 2;
+
+            wrapper.Controls.Add(uc);
+            f1.Controls.Add(wrapper);
+
+            wrapper.Resize += (s, e) =>
+            {
+                uc.Left = (wrapper.Width - uc.Width) / 2;
+            };
+        }
     }
 }

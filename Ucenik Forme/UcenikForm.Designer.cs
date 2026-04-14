@@ -46,16 +46,24 @@
             PocetakBTN.Font = new Font("Segoe UI", 12F);
             PocetakBTN.Click += PocetakBTN_Click;
             // 
+            // logoutBTN
+            // 
+            logoutBTN.Click += logoutBTN_Click;
+            // 
             // flowpanelMain
             // 
             flowpanelMain.Anchor = AnchorStyles.None;
             flowpanelMain.AutoScroll = true;
             flowpanelMain.BackColor = SystemColors.ActiveCaption;
-            flowpanelMain.Location = new Point(347, 235);
+            flowpanelMain.FlowDirection = FlowDirection.TopDown;
+            flowpanelMain.Location = new Point(134, 230);
+            flowpanelMain.Margin = new Padding(0);
+            flowpanelMain.MaximumSize = new Size(1400, 780);
             flowpanelMain.Name = "flowpanelMain";
-            flowpanelMain.Padding = new Padding(10);
-            flowpanelMain.Size = new Size(729, 765);
+            flowpanelMain.Padding = new Padding(3);
+            flowpanelMain.Size = new Size(1118, 681);
             flowpanelMain.TabIndex = 1;
+            flowpanelMain.WrapContents = false;
             // 
             // UcenikForm
             // 
@@ -72,6 +80,6 @@
 
         #endregion
         private TextBox textBox1;
-        private FlowLayoutPanel flowpanelMain;
+        public FlowLayoutPanel flowpanelMain;
     }
 }

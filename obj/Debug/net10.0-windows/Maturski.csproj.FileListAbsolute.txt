@@ -28,3 +28,4 @@ C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\ref\Maturski.dll
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.PocetakCard.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Ucenik_Forme.OceneListaVrh.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Ucenik_Forme.OceneListaDonji.resources
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Ucenik_Forme.IzostanciListaVrh.resources

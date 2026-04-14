@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vasic\\source\\repos\\Maturski\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\ucenik forme\\izostancilistavrh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\izostancilistavrh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|C:\\Users\\vasic\\source\\repos\\Maturski\\ucenik forme\\ocenelistadonji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ocenelistadonji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\ucenik forme\\ocenelistadonji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ocenelistadonji.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|C:\\Users\\vasic\\source\\repos\\Maturski\\ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|C:\\Users\\vasic\\source\\repos\\Maturski\\ucenik forme\\ocenelistavrh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ocenelistavrh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Database.cs",
               "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Database.cs",
               "RelativeDocumentMoniker": "Database.cs",
               "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Database.cs",
               "RelativeToolTip": "Database.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAawCUAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T11:30:24.034Z",
               "IsPinned": true,
@@ -53,62 +49,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UcenikForm.cs",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
-              "RelativeDocumentMoniker": "Ucenik Forme\\UcenikForm.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
-              "RelativeToolTip": "Ucenik Forme\\UcenikForm.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwCkAAAATAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAnwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T12:36:49.97Z",
+              "WhenOpened": "2026-04-14T11:48:34.001Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OceneListaDonji.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\OceneListaDonji.cs",
-              "RelativeDocumentMoniker": "Ucenik Forme\\OceneListaDonji.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\OceneListaDonji.cs [Design]",
-              "RelativeToolTip": "Ucenik Forme\\OceneListaDonji.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T12:08:14.824Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OceneListaDonji.cs",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\OceneListaDonji.cs",
-              "RelativeDocumentMoniker": "Ucenik Forme\\OceneListaDonji.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\OceneListaDonji.cs",
-              "RelativeToolTip": "Ucenik Forme\\OceneListaDonji.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T12:27:44.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "OceneListaVrh.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\OceneListaVrh.cs",
-              "RelativeDocumentMoniker": "Ucenik Forme\\OceneListaVrh.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\OceneListaVrh.cs [Design]",
-              "RelativeToolTip": "Ucenik Forme\\OceneListaVrh.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T11:59:47.415Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "UcenikForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
               "RelativeDocumentMoniker": "Ucenik Forme\\UcenikForm.cs",
               "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs [Design]",
               "RelativeToolTip": "Ucenik Forme\\UcenikForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-11T11:59:19.156Z",
+              "WhenOpened": "2026-04-14T14:08:24.347Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UcenikForm.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
+              "RelativeDocumentMoniker": "Ucenik Forme\\UcenikForm.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
+              "RelativeToolTip": "Ucenik Forme\\UcenikForm.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswHEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:06:42.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IzostanciListaVrh.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\IzostanciListaVrh.cs",
+              "RelativeDocumentMoniker": "Ucenik Forme\\IzostanciListaVrh.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\IzostanciListaVrh.cs [Design]",
+              "RelativeToolTip": "Ucenik Forme\\IzostanciListaVrh.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:03:03.735Z",
               "EditorCaption": " [Design]"
             }
           ]

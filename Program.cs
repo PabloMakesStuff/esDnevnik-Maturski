@@ -34,31 +34,42 @@ namespace Maturski
             f1.Hide();
         }
 
+        // font za dugme, koristi se u ucenikform, menjace se posle
         public static Font btnFont = new Font("Arial", 12);
 
 
         //centrira usercontrol sa panelom, drugacije ne znam
         public static void AddCenteredControl(UserControl uc, FlowLayoutPanel f1)
         {
-            int scrollbarWidth = SystemInformation.VerticalScrollBarWidth;
+            f1.SuspendLayout();
 
             Panel wrapper = new Panel();
-            wrapper.Margin = new Padding(0);
 
-            wrapper.Width = f1.ClientSize.Width - f1.Padding.Horizontal - scrollbarWidth;
+            wrapper.Margin = new Padding(0, 5, 0, 5);
 
+            wrapper.Padding = new Padding(0);
             wrapper.Height = uc.Height;
+            wrapper.Width = f1.ClientSize.Width;
 
-            uc.Top = 5;
-            uc.Left = (wrapper.Width - uc.Width) / 2;
+            uc.Margin = new Padding(0);
+
+            uc.Top = 0;
+            uc.Left = Math.Max(0, (wrapper.Width - uc.Width) / 2);
 
             wrapper.Controls.Add(uc);
             f1.Controls.Add(wrapper);
 
             wrapper.Resize += (s, e) =>
             {
-                uc.Left = (wrapper.Width - uc.Width) / 2;
+                uc.Left = Math.Max(0, (wrapper.ClientSize.Width - uc.Width) / 2);
             };
+
+            f1.Resize += (s, e) =>
+            {
+                wrapper.Width = f1.ClientSize.Width;
+            };
+
+            f1.ResumeLayout();
         }
     }
 }

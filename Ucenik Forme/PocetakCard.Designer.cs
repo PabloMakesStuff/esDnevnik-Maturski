@@ -39,7 +39,7 @@
             labelOcene.AutoSize = true;
             labelOcene.BackColor = SystemColors.ButtonHighlight;
             labelOcene.Font = new Font("Segoe UI", 100F);
-            labelOcene.Location = new Point(25, -21);
+            labelOcene.Location = new Point(28, -18);
             labelOcene.Margin = new Padding(0);
             labelOcene.Name = "labelOcene";
             labelOcene.Size = new Size(183, 221);
@@ -50,7 +50,7 @@
             // 
             labelOpis.AutoSize = true;
             labelOpis.Font = new Font("Segoe UI", 10F);
-            labelOpis.Location = new Point(236, 80);
+            labelOpis.Location = new Point(239, 83);
             labelOpis.Name = "labelOpis";
             labelOpis.Size = new Size(80, 23);
             labelOpis.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             labelPredmet.AutoSize = true;
             labelPredmet.Font = new Font("Segoe UI", 20F);
-            labelPredmet.Location = new Point(236, 16);
+            labelPredmet.Location = new Point(239, 19);
             labelPredmet.Name = "labelPredmet";
             labelPredmet.Size = new Size(109, 46);
             labelPredmet.TabIndex = 2;
@@ -71,11 +71,12 @@
             labelDatum.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             labelDatum.AutoSize = true;
             labelDatum.Font = new Font("Segoe UI", 15F);
-            labelDatum.Location = new Point(511, 161);
+            labelDatum.Location = new Point(508, 158);
             labelDatum.Name = "labelDatum";
             labelDatum.Size = new Size(81, 35);
             labelDatum.TabIndex = 3;
             labelDatum.Text = "label1";
+            labelDatum.TextAlign = ContentAlignment.MiddleRight;
             // 
             // PocetakCard
             // 
@@ -87,6 +88,7 @@
             Controls.Add(labelOpis);
             Controls.Add(labelOcene);
             Name = "PocetakCard";
+            Padding = new Padding(3);
             Size = new Size(595, 196);
             ResumeLayout(false);
             PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace Maturski.Ucenik_Forme
 {
-    partial class IzostanciListaVrh
+    partial class IzostanciListaDonji
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,64 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            labelPredmet = new Label();
             label3 = new Label();
-            label4 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // label1
+            // labelPredmet
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 22F);
-            label1.Location = new Point(223, 10);
-            label1.Name = "label1";
-            label1.Size = new Size(193, 50);
-            label1.TabIndex = 0;
-            label1.Text = "Opravdani";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 22F);
-            label2.Location = new Point(479, 10);
-            label2.Name = "label2";
-            label2.Size = new Size(234, 50);
-            label2.TabIndex = 1;
-            label2.Text = "Neopravdani";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            labelPredmet.AutoSize = true;
+            labelPredmet.Font = new Font("Segoe UI", 22F);
+            labelPredmet.Location = new Point(6, 15);
+            labelPredmet.Name = "labelPredmet";
+            labelPredmet.Size = new Size(170, 50);
+            labelPredmet.TabIndex = 7;
+            labelPredmet.Text = "Predmeti";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 22F);
-            label3.Location = new Point(777, 10);
+            label3.Location = new Point(780, 15);
             label3.Name = "label3";
             label3.Size = new Size(248, 50);
-            label3.TabIndex = 2;
+            label3.TabIndex = 6;
             label3.Text = "Neregulisanih";
             // 
-            // label4
+            // label2
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 22F);
-            label4.Location = new Point(3, 10);
-            label4.Name = "label4";
-            label4.Size = new Size(170, 50);
-            label4.TabIndex = 3;
-            label4.Text = "Predmeti";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 22F);
+            label2.Location = new Point(482, 15);
+            label2.Name = "label2";
+            label2.Size = new Size(234, 50);
+            label2.TabIndex = 5;
+            label2.Text = "Neopravdani";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // IzostanciListaVrh
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 22F);
+            label1.Location = new Point(226, 15);
+            label1.Name = "label1";
+            label1.Size = new Size(193, 50);
+            label1.TabIndex = 4;
+            label1.Text = "Opravdani";
+            // 
+            // IzostanciListaDonji
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDarkDark;
-            Controls.Add(label4);
+            Controls.Add(labelPredmet);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(0);
-            Name = "IzostanciListaVrh";
+            Name = "IzostanciListaDonji";
             Size = new Size(1034, 80);
             ResumeLayout(false);
             PerformLayout();
@@ -93,9 +91,9 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
+        private Label labelPredmet;
         private Label label3;
-        private Label label4;
+        private Label label2;
+        private Label label1;
     }
 }

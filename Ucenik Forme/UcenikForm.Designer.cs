@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            flowpanelMain = new FlowLayoutPanel();
+            panelMain = new FlowLayoutPanel();
+            panelParent = new Panel();
+            panelParent.SuspendLayout();
             SuspendLayout();
             // 
             // IzostanciBTN
@@ -50,20 +52,28 @@
             // 
             logoutBTN.Click += logoutBTN_Click;
             // 
-            // flowpanelMain
+            // panelMain
             // 
-            flowpanelMain.Anchor = AnchorStyles.None;
-            flowpanelMain.AutoScroll = true;
-            flowpanelMain.BackColor = SystemColors.ActiveCaption;
-            flowpanelMain.FlowDirection = FlowDirection.TopDown;
-            flowpanelMain.Location = new Point(134, 230);
-            flowpanelMain.Margin = new Padding(0);
-            flowpanelMain.MaximumSize = new Size(1400, 780);
-            flowpanelMain.Name = "flowpanelMain";
-            flowpanelMain.Padding = new Padding(3);
-            flowpanelMain.Size = new Size(1118, 681);
-            flowpanelMain.TabIndex = 1;
-            flowpanelMain.WrapContents = false;
+            panelMain.AutoScroll = true;
+            panelMain.BackColor = SystemColors.ActiveCaption;
+            panelMain.Dock = DockStyle.Fill;
+            panelMain.FlowDirection = FlowDirection.TopDown;
+            panelMain.Location = new Point(0, 0);
+            panelMain.MaximumSize = new Size(10000, 1000);
+            panelMain.MinimumSize = new Size(500, 500);
+            panelMain.Name = "panelMain";
+            panelMain.Size = new Size(1422, 768);
+            panelMain.TabIndex = 2;
+            panelMain.WrapContents = false;
+            // 
+            // panelParent
+            // 
+            panelParent.Controls.Add(panelMain);
+            panelParent.Dock = DockStyle.Fill;
+            panelParent.Location = new Point(0, 209);
+            panelParent.Name = "panelParent";
+            panelParent.Size = new Size(1422, 768);
+            panelParent.TabIndex = 3;
             // 
             // UcenikForm
             // 
@@ -71,15 +81,17 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
-            Controls.Add(flowpanelMain);
+            Controls.Add(panelParent);
             Name = "UcenikForm";
             Text = "UcenikForm";
-            Controls.SetChildIndex(flowpanelMain, 0);
+            Controls.SetChildIndex(panelParent, 0);
+            panelParent.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
         private TextBox textBox1;
-        public FlowLayoutPanel flowpanelMain;
+        private FlowLayoutPanel panelMain;
+        private Panel panelParent;
     }
 }

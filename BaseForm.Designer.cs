@@ -40,22 +40,22 @@
             // 
             // panelTop
             // 
-            panelTop.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panelTop.BackColor = SystemColors.ControlDark;
             panelTop.Controls.Add(logoutBTN);
             panelTop.Controls.Add(IzostanciBTN);
             panelTop.Controls.Add(OceneBTN);
             panelTop.Controls.Add(PocetakBTN);
             panelTop.Controls.Add(pictureBox1);
+            panelTop.Dock = DockStyle.Top;
             panelTop.Location = new Point(0, 0);
             panelTop.Name = "panelTop";
-            panelTop.Size = new Size(1424, 209);
+            panelTop.Size = new Size(1422, 209);
             panelTop.TabIndex = 0;
             // 
             // logoutBTN
             // 
             logoutBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            logoutBTN.Location = new Point(1300, 12);
+            logoutBTN.Location = new Point(1298, 12);
             logoutBTN.Name = "logoutBTN";
             logoutBTN.Size = new Size(94, 56);
             logoutBTN.TabIndex = 4;
@@ -65,7 +65,7 @@
             // IzostanciBTN
             // 
             IzostanciBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            IzostanciBTN.Location = new Point(1122, 76);
+            IzostanciBTN.Location = new Point(1120, 76);
             IzostanciBTN.Name = "IzostanciBTN";
             IzostanciBTN.Size = new Size(130, 57);
             IzostanciBTN.TabIndex = 3;
@@ -75,7 +75,7 @@
             // OceneBTN
             // 
             OceneBTN.Anchor = AnchorStyles.None;
-            OceneBTN.Location = new Point(647, 76);
+            OceneBTN.Location = new Point(646, 76);
             OceneBTN.Name = "OceneBTN";
             OceneBTN.Size = new Size(130, 57);
             OceneBTN.TabIndex = 2;

@@ -20,14 +20,13 @@ namespace Maturski
         public UcenikForm()
         {
             InitializeComponent();
-            flowpanelMain.WrapContents = false;
         }
 
         // dodati upitnici da bi kompajler ucutao
         private void PocetakBTN_Click(object sender, EventArgs e)
         {
             btnFontChange(PocetakBTN);
-            flowpanelMain.Controls.Clear();
+            panelMain.Controls.Clear();
 
             string query =
                 "SELECT predmeti.nazivPred AS Predmet, ocene.opis AS Opis, ocene.broj_oc AS Ocena, ocene.datum AS Datum " +
@@ -44,7 +43,7 @@ namespace Maturski
                 string? datum = row["Datum"].ToString();
 
                 var card = new PocetakCard(predmet, opis, ocena, datum);
-                FM.AddCenteredControl(card, flowpanelMain);
+                FM.AddCenteredControl(card, panelMain);
             }
         }
 
@@ -52,8 +51,8 @@ namespace Maturski
         {
             // Prvo postavlja OceneListaVrh, cista estetika
             btnFontChange(OceneBTN);
-            flowpanelMain.Controls.Clear();
-            FM.AddCenteredControl(new OceneListaVrh(), flowpanelMain);
+            panelMain.Controls.Clear();
+            FM.AddCenteredControl(new OceneListaVrh(), panelMain);
 
             // zatim, trazi ocene prema ucenikid, predmet i polugodiste, pa ih prikazuje
             // ako nema ocenu (tojkest null) onda ne prikazuje nista (zbog toga : null)
@@ -98,20 +97,20 @@ namespace Maturski
                 string predmet = item.Key;
 
                 //u deklaraciji za varijablu pita, da li je cnt1 veci od 0, ako jeste onda ovo
-                double? prosek1 = item.Value.cnt1 > 0 ? (double)item.Value.sum1 / item.Value.cnt1 : null;
-                double? prosek2 = item.Value.cnt2 > 0 ? (double)item.Value.sum2 / item.Value.cnt2 : null;
+                double? prosek1 = item.Value.cnt1 > 0 ? Math.Round((double)item.Value.sum1 / item.Value.cnt1, 2) : null;
+                double? prosek2 = item.Value.cnt2 > 0 ? Math.Round((double)item.Value.sum2 / item.Value.cnt2, 2) : null;
 
                 var card = new OceneListaDonji(predmet, prosek1, prosek2);
-                FM.AddCenteredControl(card, flowpanelMain);
+                FM.AddCenteredControl(card, panelMain);
             }
         }
 
         private void IzostanciBTN_Click(object sender, EventArgs e)
         {
             btnFontChange(IzostanciBTN);
-            flowpanelMain.Controls.Clear();
+            panelMain.Controls.Clear();
 
-            FM.AddCenteredControl(new IzostanciListaVrh(), flowpanelMain);
+            FM.AddCenteredControl(new IzostanciListaVrh(), panelMain);
         }
 
         private void logoutBTN_Click(object sender, EventArgs e)

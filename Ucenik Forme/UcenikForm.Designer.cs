@@ -54,9 +54,9 @@
             // 
             // panelMain
             // 
+            panelMain.Anchor = AnchorStyles.None;
             panelMain.AutoScroll = true;
             panelMain.BackColor = SystemColors.ActiveCaption;
-            panelMain.Dock = DockStyle.Fill;
             panelMain.FlowDirection = FlowDirection.TopDown;
             panelMain.Location = new Point(0, 0);
             panelMain.MaximumSize = new Size(10000, 1000);

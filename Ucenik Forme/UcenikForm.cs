@@ -108,9 +108,48 @@ namespace Maturski
         private void IzostanciBTN_Click(object sender, EventArgs e)
         {
             btnFontChange(IzostanciBTN);
-            panelMain.Controls.Clear();
 
+            panelMain.Controls.Clear();
             FM.AddCenteredControl(new IzostanciListaVrh(), panelMain);
+
+            string query = "SELECT p.nazivPred, i.status, i.ID_ucenik" +
+                " FROM izostanci i, predmeti p" +
+                " WHERE i.id_predmet = p.id_predmet" +
+                " AND i.id_ucenik = ?" +
+                " ORDER BY p.nazivPred, i.status";
+
+            var dt = Database.execQuery(query, new OleDbParameter("?", LoginForm.ID_ucenik));
+
+            var izostanci = new Dictionary<string, (string predmet, int opra, int neopra, int nereg)>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string predmet = row["nazivPred"].ToString();
+                string status = row["status"].ToString();
+
+                if(!izostanci.ContainsKey(predmet))
+                    izostanci[predmet] = (predmet, 0, 0, 0);
+
+                var i = izostanci[predmet];
+
+                if (status == "opravdani")
+                    i = (predmet, i.opra + 1, i.neopra, i.nereg);
+                else if (status == "neopravdani")
+                    i = (predmet, i.opra, i.neopra + 1, i.nereg);
+                else if (status == "neregulisani")
+                    i = (predmet, i.opra, i.neopra, i.nereg + 1);
+                izostanci[predmet] = i;
+            }
+
+            foreach (var item in izostanci)
+            {
+                string predmet = item.Key;
+                int opra = item.Value.opra;
+                int neopra = item.Value.neopra;
+                int nereg = item.Value.nereg;
+                var card = new IzostanciListaDonji(predmet, opra, neopra, nereg);
+                FM.AddCenteredControl(card, panelMain);
+            }
         }
 
         private void logoutBTN_Click(object sender, EventArgs e)

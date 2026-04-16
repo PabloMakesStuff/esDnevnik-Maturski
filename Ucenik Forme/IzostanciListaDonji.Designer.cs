@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             labelPredmet = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            labelNeregulisani = new Label();
+            labelNeopravdani = new Label();
+            labelOpravdani = new Label();
             SuspendLayout();
             // 
             // labelPredmet
@@ -43,46 +43,49 @@
             labelPredmet.Size = new Size(170, 50);
             labelPredmet.TabIndex = 7;
             labelPredmet.Text = "Predmeti";
+            labelPredmet.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // label3
+            // labelNeregulisani
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 22F);
-            label3.Location = new Point(780, 15);
-            label3.Name = "label3";
-            label3.Size = new Size(248, 50);
-            label3.TabIndex = 6;
-            label3.Text = "Neregulisanih";
+            labelNeregulisani.AutoSize = true;
+            labelNeregulisani.Font = new Font("Segoe UI", 22F);
+            labelNeregulisani.Location = new Point(880, 15);
+            labelNeregulisani.Name = "labelNeregulisani";
+            labelNeregulisani.Size = new Size(248, 50);
+            labelNeregulisani.TabIndex = 6;
+            labelNeregulisani.Text = "Neregulisanih";
+            labelNeregulisani.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // labelNeopravdani
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 22F);
-            label2.Location = new Point(482, 15);
-            label2.Name = "label2";
-            label2.Size = new Size(234, 50);
-            label2.TabIndex = 5;
-            label2.Text = "Neopravdani";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            labelNeopravdani.AutoSize = true;
+            labelNeopravdani.Font = new Font("Segoe UI", 22F);
+            labelNeopravdani.Location = new Point(570, 15);
+            labelNeopravdani.Name = "labelNeopravdani";
+            labelNeopravdani.Size = new Size(234, 50);
+            labelNeopravdani.TabIndex = 5;
+            labelNeopravdani.Text = "Neopravdani";
+            labelNeopravdani.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // labelOpravdani
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 22F);
-            label1.Location = new Point(226, 15);
-            label1.Name = "label1";
-            label1.Size = new Size(193, 50);
-            label1.TabIndex = 4;
-            label1.Text = "Opravdani";
+            labelOpravdani.AutoSize = true;
+            labelOpravdani.Font = new Font("Segoe UI", 22F);
+            labelOpravdani.Location = new Point(302, 15);
+            labelOpravdani.Name = "labelOpravdani";
+            labelOpravdani.Size = new Size(193, 50);
+            labelOpravdani.TabIndex = 4;
+            labelOpravdani.Text = "Opravdani";
+            labelOpravdani.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // IzostanciListaDonji
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(labelPredmet);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(labelNeregulisani);
+            Controls.Add(labelNeopravdani);
+            Controls.Add(labelOpravdani);
             Name = "IzostanciListaDonji";
             Size = new Size(1034, 80);
             ResumeLayout(false);
@@ -92,8 +95,8 @@
         #endregion
 
         private Label labelPredmet;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label labelNeregulisani;
+        private Label labelNeopravdani;
+        private Label labelOpravdani;
     }
 }

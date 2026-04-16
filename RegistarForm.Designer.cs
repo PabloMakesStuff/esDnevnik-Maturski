@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             LoginPanel = new Panel();
+            textBoxOdeljenje = new TextBox();
             LabelOdeljenje = new Label();
             Label = new Label();
             label4 = new Label();
@@ -41,7 +42,7 @@
             RegistarBTN = new Button();
             Sifra = new TextBox();
             Email = new TextBox();
-            textBox1 = new TextBox();
+            BackBTN = new Button();
             LoginPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             LoginPanel.AutoSize = true;
             LoginPanel.BackColor = Color.CadetBlue;
             LoginPanel.BorderStyle = BorderStyle.Fixed3D;
-            LoginPanel.Controls.Add(textBox1);
+            LoginPanel.Controls.Add(BackBTN);
+            LoginPanel.Controls.Add(textBoxOdeljenje);
             LoginPanel.Controls.Add(LabelOdeljenje);
             LoginPanel.Controls.Add(Label);
             LoginPanel.Controls.Add(label4);
@@ -68,6 +70,13 @@
             LoginPanel.Name = "LoginPanel";
             LoginPanel.Size = new Size(534, 696);
             LoginPanel.TabIndex = 1;
+            // 
+            // textBoxOdeljenje
+            // 
+            textBoxOdeljenje.Location = new Point(92, 474);
+            textBoxOdeljenje.Name = "textBoxOdeljenje";
+            textBoxOdeljenje.Size = new Size(125, 27);
+            textBoxOdeljenje.TabIndex = 15;
             // 
             // LabelOdeljenje
             // 
@@ -146,6 +155,7 @@
             ComboBox1.Name = "ComboBox1";
             ComboBox1.Size = new Size(151, 28);
             ComboBox1.TabIndex = 5;
+            ComboBox1.SelectedIndexChanged += comboBoxChange;
             // 
             // RegistarBTN
             // 
@@ -171,12 +181,15 @@
             Email.Size = new Size(125, 27);
             Email.TabIndex = 0;
             // 
-            // textBox1
+            // BackBTN
             // 
-            textBox1.Location = new Point(92, 474);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 15;
+            BackBTN.Location = new Point(32, 644);
+            BackBTN.Name = "BackBTN";
+            BackBTN.Size = new Size(94, 29);
+            BackBTN.TabIndex = 16;
+            BackBTN.Text = "button1";
+            BackBTN.UseVisualStyleBackColor = true;
+            BackBTN.Click += BackBTN_Click;
             // 
             // RegistarForm
             // 
@@ -207,6 +220,7 @@
         private Label label1;
         private Label Label;
         private Label LabelOdeljenje;
-        private TextBox textBox1;
+        private TextBox textBoxOdeljenje;
+        private Button BackBTN;
     }
 }

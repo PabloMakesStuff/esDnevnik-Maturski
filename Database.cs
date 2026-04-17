@@ -12,8 +12,13 @@ namespace Maturski
 {
     public static class Database
     {
-        private static readonly string connStr =
-            ConfigurationManager.ConnectionStrings["AccessDb"].ConnectionString;
+        private static readonly string connStr;
+
+        static Database()
+        {
+            var conn = ConfigurationManager.ConnectionStrings["AccessDb"];
+            connStr = conn?.ConnectionString ?? "";
+        }
 
         public static OleDbConnection GetConnection()
         {

@@ -1,4 +1,4 @@
-﻿namespace Maturski
+﻿namespace Maturski.Profesor_forme
 {
     partial class ProfesorForm
     {
@@ -28,19 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            tablePanelChild = new TableLayoutPanel();
+            panelParentTable.SuspendLayout();
             SuspendLayout();
+            // 
+            // panelParentTable
+            // 
+            panelParentTable.Controls.Add(tablePanelChild);
+            // 
+            // tablePanelChild
+            // 
+            tablePanelChild.AutoSize = true;
+            tablePanelChild.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tablePanelChild.BackColor = SystemColors.ActiveCaption;
+            tablePanelChild.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble;
+            tablePanelChild.ColumnCount = 1;
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle());
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle());
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tablePanelChild.Dock = DockStyle.Fill;
+            tablePanelChild.Location = new Point(0, 0);
+            tablePanelChild.Margin = new Padding(0);
+            tablePanelChild.Name = "tablePanelChild";
+            tablePanelChild.Padding = new Padding(80, 40, 80, 0);
+            tablePanelChild.RightToLeft = RightToLeft.No;
+            tablePanelChild.RowCount = 1;
+            tablePanelChild.RowStyles.Add(new RowStyle());
+            tablePanelChild.RowStyles.Add(new RowStyle());
+            tablePanelChild.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tablePanelChild.Size = new Size(1422, 768);
+            tablePanelChild.TabIndex = 0;
             // 
             // ProfesorForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1422, 977);
             Name = "ProfesorForm";
-            StartPosition = FormStartPosition.Manual;
-            Text = "esDnevnik(Profesor)";
+            Text = "ProfesorForm";
+            Load += ProfesorForm_Load;
+            panelParentTable.ResumeLayout(false);
+            panelParentTable.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TableLayoutPanel tablePanelChild;
     }
 }

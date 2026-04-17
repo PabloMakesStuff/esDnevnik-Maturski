@@ -36,30 +36,30 @@
             // labelOcenaDrugo
             // 
             labelOcenaDrugo.AutoSize = true;
-            labelOcenaDrugo.Font = new Font("Segoe UI", 20F);
-            labelOcenaDrugo.Location = new Point(529, 5);
+            labelOcenaDrugo.Font = new Font("Segoe UI", 22F);
+            labelOcenaDrugo.Location = new Point(744, 11);
             labelOcenaDrugo.Name = "labelOcenaDrugo";
-            labelOcenaDrugo.Size = new Size(38, 46);
+            labelOcenaDrugo.Size = new Size(42, 50);
             labelOcenaDrugo.TabIndex = 5;
             labelOcenaDrugo.Text = "II";
             // 
             // labelOcenaPrvo
             // 
             labelOcenaPrvo.AutoSize = true;
-            labelOcenaPrvo.Font = new Font("Segoe UI", 20F);
-            labelOcenaPrvo.Location = new Point(280, 5);
+            labelOcenaPrvo.Font = new Font("Segoe UI", 22F);
+            labelOcenaPrvo.Location = new Point(378, 11);
             labelOcenaPrvo.Name = "labelOcenaPrvo";
-            labelOcenaPrvo.Size = new Size(29, 46);
+            labelOcenaPrvo.Size = new Size(32, 50);
             labelOcenaPrvo.TabIndex = 4;
             labelOcenaPrvo.Text = "I";
             // 
             // labelImePred
             // 
             labelImePred.AutoSize = true;
-            labelImePred.Font = new Font("Segoe UI", 15F);
+            labelImePred.Font = new Font("Segoe UI", 22F);
             labelImePred.Location = new Point(3, 11);
             labelImePred.Name = "labelImePred";
-            labelImePred.Size = new Size(115, 35);
+            labelImePred.Size = new Size(170, 50);
             labelImePred.TabIndex = 3;
             labelImePred.Text = "Predmeti";
             // 
@@ -72,7 +72,7 @@
             Controls.Add(labelOcenaPrvo);
             Controls.Add(labelImePred);
             Name = "OceneListaVrh";
-            Size = new Size(712, 56);
+            Size = new Size(1034, 80);
             ResumeLayout(false);
             PerformLayout();
         }

@@ -1,3 +1,4 @@
+using Maturski.Profesor_forme;
 using System.ComponentModel;
 using System.Data.OleDb;
 using System.Security.Cryptography.X509Certificates;
@@ -12,11 +13,12 @@ namespace Maturski
         {
             InitializeComponent();
 
-            //privremeno za testiranje, OBAVEZNO OBRISI KASNIJE!!!!!
-            Email.Text = "djdj@gmail.com";
+            //privremeno za testiranje, OBAVEZNO OBRISI KASNIJE!!!!!!!!!
+            Email.Text = "zk@gmail.com";
             Sifra.Text = "12345";
         }
         public static int ID_ucenik { get; set; }
+        public static int ID_profesor { get; set; }
 
         private void LoginBTN_Click(object sender, EventArgs e)
         {
@@ -48,8 +50,8 @@ namespace Maturski
                     );
 
                     //UcenikForm f = new UcenikForm(ucenik);
-                    FM.OpenForm(this, new UcenikForm());
                     ID_ucenik = refId;
+                    FM.OpenForm(this, new UcenikForm());
                 }
 
                 else if (status == "profesor")
@@ -60,6 +62,7 @@ namespace Maturski
                     );
 
                     //ProfesorForm f = new ProfesorForm(profesor);
+                    ID_profesor = refId;
                     FM.OpenForm(this,new ProfesorForm());
                 }
                 else

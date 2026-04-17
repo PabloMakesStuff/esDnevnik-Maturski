@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Profesor forme\BaseFormProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Profesor forme\OdeljenjaProfesor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Profesor forme\ProfesorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Ucenik Forme\IzostanciListaDonji.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -13,13 +22,10 @@
     <Compile Update="Ucenik Forme\PocetakCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Profesor forme\ProfesorForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="RegistarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="BaseForm.cs">
+    <Compile Update="Ucenik Forme\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm.cs">

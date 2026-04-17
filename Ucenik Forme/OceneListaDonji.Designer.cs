@@ -36,32 +36,34 @@
             // labelImePred
             // 
             labelImePred.AutoSize = true;
-            labelImePred.Font = new Font("Segoe UI", 15F);
-            labelImePred.Location = new Point(3, 11);
+            labelImePred.Font = new Font("Segoe UI", 22F);
+            labelImePred.Location = new Point(3, 15);
             labelImePred.Name = "labelImePred";
-            labelImePred.Size = new Size(81, 35);
+            labelImePred.Size = new Size(120, 50);
             labelImePred.TabIndex = 0;
             labelImePred.Text = "label1";
             // 
             // labelOcenaPrvo
             // 
             labelOcenaPrvo.AutoSize = true;
-            labelOcenaPrvo.Font = new Font("Segoe UI", 20F);
-            labelOcenaPrvo.Location = new Point(280, 5);
+            labelOcenaPrvo.Font = new Font("Segoe UI", 22F);
+            labelOcenaPrvo.Location = new Point(371, 15);
             labelOcenaPrvo.Name = "labelOcenaPrvo";
-            labelOcenaPrvo.Size = new Size(38, 46);
+            labelOcenaPrvo.Size = new Size(42, 50);
             labelOcenaPrvo.TabIndex = 1;
             labelOcenaPrvo.Text = "1";
+            labelOcenaPrvo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // labelOcenaDrugo
             // 
             labelOcenaDrugo.AutoSize = true;
-            labelOcenaDrugo.Font = new Font("Segoe UI", 20F);
-            labelOcenaDrugo.Location = new Point(529, 5);
+            labelOcenaDrugo.Font = new Font("Segoe UI", 22F);
+            labelOcenaDrugo.Location = new Point(730, 15);
             labelOcenaDrugo.Name = "labelOcenaDrugo";
-            labelOcenaDrugo.Size = new Size(38, 46);
+            labelOcenaDrugo.Size = new Size(42, 50);
             labelOcenaDrugo.TabIndex = 2;
             labelOcenaDrugo.Text = "2";
+            labelOcenaDrugo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // OceneListaDonji
             // 
@@ -71,7 +73,7 @@
             Controls.Add(labelOcenaPrvo);
             Controls.Add(labelImePred);
             Name = "OceneListaDonji";
-            Size = new Size(712, 56);
+            Size = new Size(1026, 80);
             ResumeLayout(false);
             PerformLayout();
         }

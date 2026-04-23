@@ -12,6 +12,7 @@ namespace Maturski.Profesor_forme
     {
         public OdeljenjaProfesor()
         {
+            Anchor = AnchorStyles.None;
             InitializeComponent();
         }
     }

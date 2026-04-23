@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 50F);
+            label1.Location = new Point(33, 42);
+            label1.Name = "label1";
+            label1.Size = new Size(166, 112);
+            label1.TabIndex = 0;
+            label1.Text = "IV1";
             // 
             // OdeljenjaProfesor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
+            Controls.Add(label1);
             Name = "OdeljenjaProfesor";
-            Size = new Size(595, 196);
+            Size = new Size(433, 196);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }

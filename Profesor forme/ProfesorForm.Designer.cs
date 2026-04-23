@@ -36,16 +36,21 @@
             // 
             panelParentTable.Controls.Add(tablePanelChild);
             // 
+            // IzlogujSeBTN
+            // 
+            IzlogujSeBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            // 
             // tablePanelChild
             // 
-            tablePanelChild.AutoSize = true;
+            tablePanelChild.AutoScroll = true;
             tablePanelChild.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             tablePanelChild.BackColor = SystemColors.ActiveCaption;
-            tablePanelChild.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble;
-            tablePanelChild.ColumnCount = 1;
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle());
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle());
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tablePanelChild.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetDouble;
+            tablePanelChild.ColumnCount = 3;
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tablePanelChild.Dock = DockStyle.Fill;
             tablePanelChild.Location = new Point(0, 0);
             tablePanelChild.Margin = new Padding(0);
@@ -54,8 +59,6 @@
             tablePanelChild.RightToLeft = RightToLeft.No;
             tablePanelChild.RowCount = 1;
             tablePanelChild.RowStyles.Add(new RowStyle());
-            tablePanelChild.RowStyles.Add(new RowStyle());
-            tablePanelChild.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
             tablePanelChild.Size = new Size(1422, 768);
             tablePanelChild.TabIndex = 0;
             // 
@@ -68,7 +71,6 @@
             Text = "ProfesorForm";
             Load += ProfesorForm_Load;
             panelParentTable.ResumeLayout(false);
-            panelParentTable.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }

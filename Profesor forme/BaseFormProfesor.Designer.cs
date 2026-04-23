@@ -114,8 +114,8 @@
 
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Button IzlogujSeBTN;
         protected Label labelDobarDan;
         protected Panel panelParentTable;
+        protected Button IzlogujSeBTN;
     }
 }

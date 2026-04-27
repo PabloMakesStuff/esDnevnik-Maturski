@@ -31,7 +31,7 @@ namespace Maturski.Profesor_forme
             labelDobarDan.Text = "Dobar dan, " + ime;
 
             // kako sada da uzmem odeljenja za ID_profesora i koji predmet predaje tom odeljenju? Treba mi i naziv predmeta i naziv odeljenja, a imam samo ID_profesora
-            var query = Database.execQuery("");
+            //var query = Database.execQuery("");
         }
     }
 }

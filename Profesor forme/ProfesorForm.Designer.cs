@@ -45,12 +45,10 @@
             tablePanelChild.AutoScroll = true;
             tablePanelChild.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             tablePanelChild.BackColor = SystemColors.ActiveCaption;
-            tablePanelChild.CellBorderStyle = TableLayoutPanelCellBorderStyle.OutsetDouble;
             tablePanelChild.ColumnCount = 3;
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tablePanelChild.Dock = DockStyle.Fill;
             tablePanelChild.Location = new Point(0, 0);
             tablePanelChild.Margin = new Padding(0);

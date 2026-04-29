@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
@@ -31,7 +32,22 @@ namespace Maturski.Profesor_forme
             labelDobarDan.Text = "Dobar dan, " + ime;
 
             // kako sada da uzmem odeljenja za ID_profesora i koji predmet predaje tom odeljenju? Treba mi i naziv predmeta i naziv odeljenja, a imam samo ID_profesora
-            //var query = Database.execQuery("");
+            var query =
+                "SELECT p.ID_profesor, pr.nazivPred AS Predmet, o.odeljenje AS Odeljenje " +
+                "FROM (ProfesorPredmetOdeljenje AS p " +
+                "INNER JOIN predmeti AS pr ON p.ID_predmet = pr.ID_predmet) " +
+                "INNER JOIN odeljenje AS o ON p.ID_odeljenja = o.ID_odeljenja " +
+                "WHERE p.ID_profesor = ? " +
+                "ORDER BY pr.nazivPred, o.odeljenje;";
+
+            var dt2 = Database.execQuery(query, new OleDbParameter("?", LoginForm.ID_profesor));
+
+            foreach (DataRow row in dt2.Rows)
+            {
+                string? odeljenje = row["Odeljenje"].ToString();
+                string? predmet = row["Predmet"].ToString();
+                tablePanelChild.Controls.Add(new OdeljenjaProfesor(odeljenje, predmet));
+            }
         }
     }
 }

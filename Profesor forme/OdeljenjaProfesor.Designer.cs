@@ -28,33 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            labelOdeljenje = new Label();
+            labelPredmet = new Label();
+            helperBTN = new Button();
             SuspendLayout();
             // 
-            // label1
+            // labelOdeljenje
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 50F);
-            label1.Location = new Point(33, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(166, 112);
-            label1.TabIndex = 0;
-            label1.Text = "IV1";
+            labelOdeljenje.AutoSize = true;
+            labelOdeljenje.Font = new Font("Segoe UI", 45F);
+            labelOdeljenje.Location = new Point(0, 48);
+            labelOdeljenje.Margin = new Padding(0);
+            labelOdeljenje.Name = "labelOdeljenje";
+            labelOdeljenje.Size = new Size(149, 100);
+            labelOdeljenje.TabIndex = 0;
+            labelOdeljenje.Text = "IV5";
+            labelOdeljenje.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // labelPredmet
+            // 
+            labelPredmet.AutoSize = true;
+            labelPredmet.Font = new Font("Segoe UI", 20F);
+            labelPredmet.Location = new Point(133, 76);
+            labelPredmet.Margin = new Padding(0);
+            labelPredmet.MaximumSize = new Size(300, 0);
+            labelPredmet.Name = "labelPredmet";
+            labelPredmet.Size = new Size(148, 46);
+            labelPredmet.TabIndex = 1;
+            labelPredmet.Text = "Predmet";
+            labelPredmet.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // helperBTN
+            // 
+            helperBTN.BackColor = Color.Transparent;
+            helperBTN.FlatAppearance.BorderColor = Color.Black;
+            helperBTN.FlatAppearance.BorderSize = 0;
+            helperBTN.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            helperBTN.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            helperBTN.FlatStyle = FlatStyle.Popup;
+            helperBTN.Location = new Point(15, 3);
+            helperBTN.Name = "helperBTN";
+            helperBTN.Size = new Size(456, 190);
+            helperBTN.TabIndex = 2;
+            helperBTN.UseVisualStyleBackColor = false;
+            helperBTN.Click += helperBTN_Click;
             // 
             // OdeljenjaProfesor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDarkDark;
-            Controls.Add(label1);
+            Controls.Add(labelPredmet);
+            Controls.Add(labelOdeljenje);
+            Controls.Add(helperBTN);
             Name = "OdeljenjaProfesor";
-            Size = new Size(433, 196);
+            Size = new Size(487, 196);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private Label labelOdeljenje;
+        private Label labelPredmet;
+        private Button helperBTN;
     }
 }

@@ -10,6 +10,9 @@
     <Compile Update="Profesor forme\ProfesorForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Profesor forme\UcenikProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Ucenik Forme\IzostanciListaDonji.cs">
       <SubType>UserControl</SubType>
     </Compile>

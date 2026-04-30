@@ -22,7 +22,8 @@ namespace Maturski.Profesor_forme
 
         private void helperBTN_Click(object sender, EventArgs e)
         {
-            FM.OpenForm(this.FindForm(), new UcenikProfil());
+            string id_odeljenja = labelOdeljenje.Text;
+            FM.OpenForm(this.FindForm(), new OdeljenjeProfil(id_odeljenja));
         }
     }
 }

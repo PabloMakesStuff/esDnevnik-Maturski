@@ -6,6 +6,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
@@ -36,19 +37,33 @@ namespace Maturski
 
             if (ComboBox1.Text == "Ucenik")
             {
-                string razred = odeljenje.Last<char>().ToString();
-                string odeljenje1 = odeljenje.Substring(0, odeljenje.Length - 1);
+                // proverava da li odeljenje ima razred asociran sa njim
+                // probao sam da korisitm char.Any(IsDigit) ali prosto ne radi
+                // ne znam zasto
+                bool provera = false;
+                foreach (char c in odeljenje)
+                    if (char.IsDigit(c)) {
+                        provera = true;
+                        break;
+                    }
+
+                if (!provera)
+                {
+                    MessageBox.Show("Unesite odeljenje u formatu 'XY' gde je X razred a Y odeljenje");
+                    return;
+                }
 
                 Database.execNonQuery(
-                    "INSERT INTO ucenik (ime, prezime, odeljenje, razred) VALUES (?, ?, ?, ?)",
+                    "INSERT INTO ucenik (ime, prezime, odeljenje) VALUES (?, ?, ?)",
                     new OleDbParameter("ime", ime),
                     new OleDbParameter("prezime", prezime),
-                    new OleDbParameter("odeljenje", odeljenje1),
-                    new OleDbParameter("razred", razred)
+                    new OleDbParameter("odeljenje", odeljenje)
                 );
 
                 var dt = Database.execQuery("SELECT @@IDENTITY AS LastId");
                 refId = Convert.ToInt32(dt.Rows[0]["LastId"]);
+
+                MessageBox.Show("Uspesno ste napravili nalog!");
             }
 
             else if (ComboBox1.Text == "Profesor")

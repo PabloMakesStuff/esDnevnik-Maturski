@@ -31,7 +31,6 @@ namespace Maturski.Profesor_forme
 
             labelDobarDan.Text = "Dobar dan, " + ime;
 
-            // kako sada da uzmem odeljenja za ID_profesora i koji predmet predaje tom odeljenju? Treba mi i naziv predmeta i naziv odeljenja, a imam samo ID_profesora
             var query =
                 "SELECT p.ID_profesor, pr.nazivPred AS Predmet, o.odeljenje AS Odeljenje " +
                 "FROM (ProfesorPredmetOdeljenje AS p " +

@@ -13,6 +13,12 @@
     <Compile Update="Profesor forme\OdeljenjeProfil.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Profesor forme\UcenikIndividuo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Profesor forme\UcenikProfilIndividuo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Ucenik Forme\IzostanciListaDonji.cs">
       <SubType>UserControl</SubType>
     </Compile>

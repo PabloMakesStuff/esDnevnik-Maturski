@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             panelTop = new Panel();
+            BackBTN = new Button();
             tablePanelChild = new TableLayoutPanel();
             panelTop.SuspendLayout();
             SuspendLayout();
@@ -46,6 +47,7 @@
             // 
             // panelTop
             // 
+            panelTop.Controls.Add(BackBTN);
             panelTop.Controls.Add(label1);
             panelTop.Dock = DockStyle.Top;
             panelTop.Location = new Point(0, 0);
@@ -53,19 +55,32 @@
             panelTop.Size = new Size(1422, 125);
             panelTop.TabIndex = 0;
             // 
+            // BackBTN
+            // 
+            BackBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BackBTN.Location = new Point(1270, 12);
+            BackBTN.Name = "BackBTN";
+            BackBTN.Size = new Size(140, 63);
+            BackBTN.TabIndex = 1;
+            BackBTN.Text = "Nazad";
+            BackBTN.UseVisualStyleBackColor = true;
+            BackBTN.Click += BackBTN_Click;
+            // 
             // tablePanelChild
             // 
-            tablePanelChild.ColumnCount = 1;
-            tablePanelChild.ColumnStyles.Add(new ColumnStyle());
+            tablePanelChild.ColumnCount = 3;
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
             tablePanelChild.Dock = DockStyle.Fill;
             tablePanelChild.Location = new Point(0, 125);
             tablePanelChild.Name = "tablePanelChild";
             tablePanelChild.RowCount = 4;
-            tablePanelChild.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tablePanelChild.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tablePanelChild.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tablePanelChild.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            tablePanelChild.RowStyles.Add(new RowStyle());
+            tablePanelChild.RowStyles.Add(new RowStyle());
+            tablePanelChild.RowStyles.Add(new RowStyle());
+            tablePanelChild.RowStyles.Add(new RowStyle());
             tablePanelChild.Size = new Size(1422, 852);
             tablePanelChild.TabIndex = 1;
             // 
@@ -88,5 +103,6 @@
         private Label label1;
         private Panel panelTop;
         private TableLayoutPanel tablePanelChild;
+        private Button BackBTN;
     }
 }

@@ -23,7 +23,7 @@ namespace Maturski.Profesor_forme
 
         private void UcenikIndividuoBTN_Click(object sender, EventArgs e)
         {
-            FM.OpenForm(this.FindForm(), new UcenikIndividuo(labelImeUcenika.Text, id_ucenik_, odeljenje_));
+            FM.OpenForm(this.FindForm(), new ProfesorUcenikProfil(labelImeUcenika.Text, id_ucenik_, odeljenje_));
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Maturski.Profesor_forme
             {
                 string? odeljenje = row["Odeljenje"].ToString();
                 string? predmet = row["Predmet"].ToString();
-                tablePanelChild.Controls.Add(new OdeljenjaProfesor(odeljenje, predmet));
+                tablePanelChild.Controls.Add(new OdeljenjeProfesorBTN(odeljenje, predmet));
             }
         }
     }

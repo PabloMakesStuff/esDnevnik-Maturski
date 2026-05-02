@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Maturski.Profesor_forme
 {
-    public partial class OdeljenjaProfesor : UserControl
+    public partial class OdeljenjeProfesorBTN : UserControl
     {
-        public OdeljenjaProfesor(string? odeljenje, string? predmet)
+        public OdeljenjeProfesorBTN(string? odeljenje, string? predmet)
         {
 
             Anchor = AnchorStyles.None;
@@ -23,7 +23,7 @@ namespace Maturski.Profesor_forme
         private void helperBTN_Click(object sender, EventArgs e)
         {
             string odeljenje = labelOdeljenje.Text;
-            FM.OpenForm(this.FindForm(), new OdeljenjeProfil(odeljenje));
+            FM.OpenForm(this.FindForm(), new OdeljenjeProfilProf(odeljenje));
         }
     }
 }

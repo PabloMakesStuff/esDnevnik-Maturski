@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Maturski.Profesor_forme
 {
-    public partial class OdeljenjeProfil : Form
+    public partial class OdeljenjeProfilProf : Form
     {
-        public OdeljenjeProfil(string? odeljenje)
+        public OdeljenjeProfilProf(string? odeljenje)
         {
             InitializeComponent();
             label1.Text = "Odeljenje: " + odeljenje;

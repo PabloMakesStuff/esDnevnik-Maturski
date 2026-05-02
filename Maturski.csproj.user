@@ -4,19 +4,19 @@
     <Compile Update="Profesor forme\BaseFormProfesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Profesor forme\OdeljenjaProfesor.cs">
+    <Compile Update="Profesor forme\OdeljenjeProfesorBTN.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Profesor forme\ProfesorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Profesor forme\OdeljenjeProfil.cs">
+    <Compile Update="Profesor forme\OdeljenjeProfilProf.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Profesor forme\UcenikIndividuo.cs">
+    <Compile Update="Profesor forme\ProfesorUcenikProfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Profesor forme\UcenikProfilIndividuo.cs">
+    <Compile Update="Profesor forme\UcenikProfilInduvidual.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Ucenik Forme\IzostanciListaDonji.cs">

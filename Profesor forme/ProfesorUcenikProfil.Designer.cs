@@ -1,6 +1,6 @@
 ﻿namespace Maturski.Profesor_forme
 {
-    partial class UcenikIndividuo
+    partial class ProfesorUcenikProfil
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             IzostanciBTN = new Button();
             OceneBTN = new Button();
             labelImeUcenik = new Label();
-            tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayout = new TableLayoutPanel();
             UpisiOcenuBTN = new Button();
             IzostanakBTN = new Button();
             panel1.SuspendLayout();
@@ -93,22 +93,22 @@
             labelImeUcenik.TabIndex = 0;
             labelImeUcenik.Text = "label1";
             // 
-            // tableLayoutPanel1
+            // tableLayout
             // 
-            tableLayoutPanel1.ColumnCount = 4;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
-            tableLayoutPanel1.Dock = DockStyle.Bottom;
-            tableLayoutPanel1.Location = new Point(0, 231);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 3;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayoutPanel1.Size = new Size(1022, 442);
-            tableLayoutPanel1.TabIndex = 4;
+            tableLayout.ColumnCount = 4;
+            tableLayout.ColumnStyles.Add(new ColumnStyle());
+            tableLayout.ColumnStyles.Add(new ColumnStyle());
+            tableLayout.ColumnStyles.Add(new ColumnStyle());
+            tableLayout.ColumnStyles.Add(new ColumnStyle());
+            tableLayout.Dock = DockStyle.Bottom;
+            tableLayout.Location = new Point(0, 231);
+            tableLayout.Name = "tableLayout";
+            tableLayout.RowCount = 3;
+            tableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
+            tableLayout.Size = new Size(1022, 442);
+            tableLayout.TabIndex = 4;
             // 
             // UpisiOcenuBTN
             // 
@@ -128,16 +128,16 @@
             IzostanakBTN.Text = "Upisi Izostanak";
             IzostanakBTN.UseVisualStyleBackColor = true;
             // 
-            // UcenikIndividuo
+            // ProfesorUcenikProfil
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1022, 673);
             Controls.Add(IzostanakBTN);
             Controls.Add(UpisiOcenuBTN);
-            Controls.Add(tableLayoutPanel1);
+            Controls.Add(tableLayout);
             Controls.Add(panel1);
-            Name = "UcenikIndividuo";
+            Name = "ProfesorUcenikProfil";
             Text = "UcenikIndividuo";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -151,7 +151,7 @@
         private Button OceneBTN;
         private Label labelImeUcenik;
         private Button BackBTN;
-        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tableLayout;
         private Button UpisiOcenuBTN;
         private Button IzostanakBTN;
     }

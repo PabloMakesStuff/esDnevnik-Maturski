@@ -1,6 +1,6 @@
 ﻿namespace Maturski.Profesor_forme
 {
-    partial class OdeljenjaProfesor
+    partial class OdeljenjeProfesorBTN
     {
         /// <summary> 
         /// Required designer variable.

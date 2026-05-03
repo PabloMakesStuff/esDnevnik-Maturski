@@ -34,8 +34,7 @@
             OceneBTN = new Button();
             labelImeUcenik = new Label();
             tableLayout = new TableLayoutPanel();
-            UpisiOcenuBTN = new Button();
-            IzostanakBTN = new Button();
+            flowPanel = new FlowLayoutPanel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -65,6 +64,7 @@
             // 
             // IzostanciBTN
             // 
+            IzostanciBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             IzostanciBTN.Location = new Point(635, 90);
             IzostanciBTN.Name = "IzostanciBTN";
             IzostanciBTN.Size = new Size(170, 53);
@@ -95,46 +95,38 @@
             // 
             // tableLayout
             // 
-            tableLayout.ColumnCount = 4;
-            tableLayout.ColumnStyles.Add(new ColumnStyle());
-            tableLayout.ColumnStyles.Add(new ColumnStyle());
-            tableLayout.ColumnStyles.Add(new ColumnStyle());
-            tableLayout.ColumnStyles.Add(new ColumnStyle());
-            tableLayout.Dock = DockStyle.Bottom;
-            tableLayout.Location = new Point(0, 231);
+            tableLayout.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayout.ColumnCount = 3;
+            tableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
+            tableLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            tableLayout.Dock = DockStyle.Fill;
+            tableLayout.Location = new Point(0, 160);
             tableLayout.Name = "tableLayout";
-            tableLayout.RowCount = 3;
-            tableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 33.3333321F));
-            tableLayout.Size = new Size(1022, 442);
+            tableLayout.RowCount = 4;
+            tableLayout.RowStyles.Add(new RowStyle());
+            tableLayout.RowStyles.Add(new RowStyle());
+            tableLayout.RowStyles.Add(new RowStyle());
+            tableLayout.RowStyles.Add(new RowStyle());
+            tableLayout.Size = new Size(1022, 513);
             tableLayout.TabIndex = 4;
             // 
-            // UpisiOcenuBTN
+            // flowPanel
             // 
-            UpisiOcenuBTN.Location = new Point(218, 172);
-            UpisiOcenuBTN.Name = "UpisiOcenuBTN";
-            UpisiOcenuBTN.Size = new Size(170, 53);
-            UpisiOcenuBTN.TabIndex = 5;
-            UpisiOcenuBTN.Text = "Upisi Ocenu";
-            UpisiOcenuBTN.UseVisualStyleBackColor = true;
-            // 
-            // IzostanakBTN
-            // 
-            IzostanakBTN.Location = new Point(635, 172);
-            IzostanakBTN.Name = "IzostanakBTN";
-            IzostanakBTN.Size = new Size(170, 53);
-            IzostanakBTN.TabIndex = 7;
-            IzostanakBTN.Text = "Upisi Izostanak";
-            IzostanakBTN.UseVisualStyleBackColor = true;
+            flowPanel.BackColor = SystemColors.ActiveCaption;
+            flowPanel.Dock = DockStyle.Fill;
+            flowPanel.Location = new Point(0, 160);
+            flowPanel.Name = "flowPanel";
+            flowPanel.Size = new Size(1022, 513);
+            flowPanel.TabIndex = 0;
             // 
             // ProfesorUcenikProfil
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1022, 673);
-            Controls.Add(IzostanakBTN);
-            Controls.Add(UpisiOcenuBTN);
+            Controls.Add(flowPanel);
             Controls.Add(tableLayout);
             Controls.Add(panel1);
             Name = "ProfesorUcenikProfil";
@@ -152,7 +144,6 @@
         private Label labelImeUcenik;
         private Button BackBTN;
         private TableLayoutPanel tableLayout;
-        private Button UpisiOcenuBTN;
-        private Button IzostanakBTN;
+        private FlowLayoutPanel flowPanel;
     }
 }

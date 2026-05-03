@@ -30,6 +30,8 @@
         {
             label1 = new Label();
             panelTop = new Panel();
+            UpisiOcenuBTN = new Button();
+            UpisiIzostanakBTN = new Button();
             BackBTN = new Button();
             tablePanelChild = new TableLayoutPanel();
             panelTop.SuspendLayout();
@@ -47,6 +49,8 @@
             // 
             // panelTop
             // 
+            panelTop.Controls.Add(UpisiOcenuBTN);
+            panelTop.Controls.Add(UpisiIzostanakBTN);
             panelTop.Controls.Add(BackBTN);
             panelTop.Controls.Add(label1);
             panelTop.Dock = DockStyle.Top;
@@ -54,6 +58,25 @@
             panelTop.Name = "panelTop";
             panelTop.Size = new Size(1422, 125);
             panelTop.TabIndex = 0;
+            // 
+            // UpisiOcenuBTN
+            // 
+            UpisiOcenuBTN.Location = new Point(398, 12);
+            UpisiOcenuBTN.Name = "UpisiOcenuBTN";
+            UpisiOcenuBTN.Size = new Size(155, 107);
+            UpisiOcenuBTN.TabIndex = 3;
+            UpisiOcenuBTN.Text = "Upisi Ocenu";
+            UpisiOcenuBTN.UseVisualStyleBackColor = true;
+            UpisiOcenuBTN.Click += UpisiOcenuBTN_Click;
+            // 
+            // UpisiIzostanakBTN
+            // 
+            UpisiIzostanakBTN.Location = new Point(872, 12);
+            UpisiIzostanakBTN.Name = "UpisiIzostanakBTN";
+            UpisiIzostanakBTN.Size = new Size(155, 107);
+            UpisiIzostanakBTN.TabIndex = 2;
+            UpisiIzostanakBTN.Text = "Upisi izostanak";
+            UpisiIzostanakBTN.UseVisualStyleBackColor = true;
             // 
             // BackBTN
             // 
@@ -84,14 +107,14 @@
             tablePanelChild.Size = new Size(1422, 852);
             tablePanelChild.TabIndex = 1;
             // 
-            // OdeljenjeProfil
+            // OdeljenjeProfilProf
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1422, 977);
             Controls.Add(tablePanelChild);
             Controls.Add(panelTop);
-            Name = "OdeljenjeProfil";
+            Name = "OdeljenjeProfilProf";
             Text = "UcenikProfil";
             panelTop.ResumeLayout(false);
             panelTop.PerformLayout();
@@ -104,5 +127,7 @@
         private Panel panelTop;
         private TableLayoutPanel tablePanelChild;
         private Button BackBTN;
+        private Button UpisiOcenuBTN;
+        private Button UpisiIzostanakBTN;
     }
 }

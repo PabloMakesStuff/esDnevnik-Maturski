@@ -35,3 +35,5 @@ C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\refint\Maturski.d
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.pdb
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.genruntimeconfig.cache
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\ref\Maturski.dll
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UcenikOceneCard.resources
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UpisiOcenuForm.resources

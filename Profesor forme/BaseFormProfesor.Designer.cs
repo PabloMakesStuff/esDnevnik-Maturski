@@ -63,7 +63,7 @@
             // 
             labelDobarDan.AutoSize = true;
             labelDobarDan.Font = new Font("Segoe UI", 26F);
-            labelDobarDan.Location = new Point(230, 74);
+            labelDobarDan.Location = new Point(210, 30);
             labelDobarDan.Name = "labelDobarDan";
             labelDobarDan.Size = new Size(142, 60);
             labelDobarDan.TabIndex = 2;

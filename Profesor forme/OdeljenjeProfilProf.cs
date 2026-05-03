@@ -12,9 +12,11 @@ namespace Maturski.Profesor_forme
 {
     public partial class OdeljenjeProfilProf : Form
     {
+        public static string? _odeljenje = null;
         public OdeljenjeProfilProf(string? odeljenje)
         {
             InitializeComponent();
+            _odeljenje = odeljenje;
             label1.Text = "Odeljenje: " + odeljenje;
 
             var query = "SELECT ucenik.ime, ucenik.prezime, ucenik.id_ucenik " +
@@ -31,7 +33,8 @@ namespace Maturski.Profesor_forme
                 tablePanelChild.Controls.Add(l);
             }*/
 
-            foreach (DataRow row in dt.Rows) {
+            foreach (DataRow row in dt.Rows)
+            {
                 string? ime = row["Ime"].ToString();
                 string? prezime = row["Prezime"].ToString();
                 string? id_ucenik = row["id_ucenik"].ToString();
@@ -44,6 +47,11 @@ namespace Maturski.Profesor_forme
         private void BackBTN_Click(object sender, EventArgs e)
         {
             FM.OpenForm(this, new ProfesorForm());
+        }
+
+        private void UpisiOcenuBTN_Click(object sender, EventArgs e)
+        {
+            FM.OpenForm(this, new UpisiOcenuForm(_odeljenje));
         }
     }
 }

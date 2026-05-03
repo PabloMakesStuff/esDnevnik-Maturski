@@ -32,6 +32,10 @@
             panelParentTable.SuspendLayout();
             SuspendLayout();
             // 
+            // labelDobarDan
+            // 
+            labelDobarDan.Location = new Point(230, 46);
+            // 
             // panelParentTable
             // 
             panelParentTable.Controls.Add(tablePanelChild);

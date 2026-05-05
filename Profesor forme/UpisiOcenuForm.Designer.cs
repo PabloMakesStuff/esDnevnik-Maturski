@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             LoginPanel = new Panel();
+            boxImeUcenika = new ComboBox();
+            boxOcene = new ComboBox();
             label4 = new Label();
-            textBox1 = new TextBox();
+            textboxOpis = new TextBox();
             label1 = new Label();
-            comboBox1 = new ComboBox();
-            comboPredmeti = new ComboBox();
+            boxPredmet = new ComboBox();
             label3 = new Label();
             label2 = new Label();
-            RegistarBTN = new Button();
-            textboxUcenik = new TextBox();
+            UpisiOcenuBTN = new Button();
             BackBTN = new Button();
             LoginPanel.SuspendLayout();
             SuspendLayout();
@@ -48,67 +48,77 @@
             LoginPanel.AutoSize = true;
             LoginPanel.BackColor = Color.CadetBlue;
             LoginPanel.BorderStyle = BorderStyle.Fixed3D;
+            LoginPanel.Controls.Add(boxImeUcenika);
+            LoginPanel.Controls.Add(boxOcene);
             LoginPanel.Controls.Add(label4);
-            LoginPanel.Controls.Add(textBox1);
+            LoginPanel.Controls.Add(textboxOpis);
             LoginPanel.Controls.Add(label1);
-            LoginPanel.Controls.Add(comboBox1);
-            LoginPanel.Controls.Add(comboPredmeti);
+            LoginPanel.Controls.Add(boxPredmet);
             LoginPanel.Controls.Add(label3);
             LoginPanel.Controls.Add(label2);
-            LoginPanel.Controls.Add(RegistarBTN);
-            LoginPanel.Controls.Add(textboxUcenik);
+            LoginPanel.Controls.Add(UpisiOcenuBTN);
             LoginPanel.Location = new Point(251, 80);
             LoginPanel.Name = "LoginPanel";
             LoginPanel.Size = new Size(520, 557);
             LoginPanel.TabIndex = 1;
             // 
+            // boxImeUcenika
+            // 
+            boxImeUcenika.FormattingEnabled = true;
+            boxImeUcenika.Location = new Point(124, 161);
+            boxImeUcenika.Name = "boxImeUcenika";
+            boxImeUcenika.Size = new Size(268, 28);
+            boxImeUcenika.TabIndex = 13;
+            // 
+            // boxOcene
+            // 
+            boxOcene.FormattingEnabled = true;
+            boxOcene.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
+            boxOcene.Location = new Point(124, 262);
+            boxOcene.Name = "boxOcene";
+            boxOcene.Size = new Size(268, 28);
+            boxOcene.TabIndex = 12;
+            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(85, 356);
+            label4.Location = new Point(124, 341);
             label4.Name = "label4";
             label4.Size = new Size(85, 20);
             label4.TabIndex = 11;
             label4.Text = "Opis Ocene";
             // 
-            // textBox1
+            // textboxOpis
             // 
-            textBox1.Location = new Point(85, 379);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(268, 27);
-            textBox1.TabIndex = 10;
+            textboxOpis.Location = new Point(124, 364);
+            textboxOpis.Multiline = true;
+            textboxOpis.Name = "textboxOpis";
+            textboxOpis.Size = new Size(268, 98);
+            textboxOpis.TabIndex = 10;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(85, 254);
+            label1.Location = new Point(124, 239);
             label1.Name = "label1";
             label1.Size = new Size(51, 20);
             label1.TabIndex = 9;
             label1.Text = "Ocena";
             // 
-            // comboBox1
+            // boxPredmet
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            comboBox1.Location = new Point(85, 277);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(268, 28);
-            comboBox1.TabIndex = 8;
-            // 
-            // comboPredmeti
-            // 
-            comboPredmeti.FormattingEnabled = true;
-            comboPredmeti.Items.AddRange(new object[] { "Matematika", "Fizika", "Srpski", "Engleski", "Nemacki", "Francuski", "Latinski", "Biologija", "Filozofija", "Sociologija", "Istorija", "Geografija", "Programiranje", "Veb programiranje", "Objektno Orijentisano Programiranje", "Primena Racunara", "Baze Podataka", "Programske Paradigme", "Veronauka" });
-            comboPredmeti.Location = new Point(85, 74);
-            comboPredmeti.Name = "comboPredmeti";
-            comboPredmeti.Size = new Size(268, 28);
-            comboPredmeti.TabIndex = 7;
+            boxPredmet.FormattingEnabled = true;
+            boxPredmet.Items.AddRange(new object[] { "Matematika", "Fizika", "Srpski", "Engleski", "Nemacki", "Francuski", "Latinski", "Biologija", "Filozofija", "Sociologija", "Istorija", "Geografija", "Programiranje", "Veb programiranje", "Objektno Orijentisano Programiranje", "Primena Racunara", "Baze Podataka", "Programske Paradigme", "Veronauka" });
+            boxPredmet.Location = new Point(124, 59);
+            boxPredmet.Name = "boxPredmet";
+            boxPredmet.Size = new Size(268, 28);
+            boxPredmet.TabIndex = 7;
+            boxPredmet.SelectionChangeCommitted += boxPredmet_SelectionChangeCommitted;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(85, 153);
+            label3.Location = new Point(124, 138);
             label3.Name = "label3";
             label3.Size = new Size(90, 20);
             label3.TabIndex = 6;
@@ -117,27 +127,21 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(85, 51);
+            label2.Location = new Point(124, 36);
             label2.Name = "label2";
             label2.Size = new Size(102, 20);
             label2.TabIndex = 5;
             label2.Text = "Ime Predmeta";
             // 
-            // RegistarBTN
+            // UpisiOcenuBTN
             // 
-            RegistarBTN.Location = new Point(211, 510);
-            RegistarBTN.Name = "RegistarBTN";
-            RegistarBTN.Size = new Size(94, 29);
-            RegistarBTN.TabIndex = 4;
-            RegistarBTN.Text = "button1";
-            RegistarBTN.UseVisualStyleBackColor = true;
-            // 
-            // textboxUcenik
-            // 
-            textboxUcenik.Location = new Point(85, 176);
-            textboxUcenik.Name = "textboxUcenik";
-            textboxUcenik.Size = new Size(268, 27);
-            textboxUcenik.TabIndex = 1;
+            UpisiOcenuBTN.Location = new Point(211, 510);
+            UpisiOcenuBTN.Name = "UpisiOcenuBTN";
+            UpisiOcenuBTN.Size = new Size(94, 29);
+            UpisiOcenuBTN.TabIndex = 4;
+            UpisiOcenuBTN.Text = "button1";
+            UpisiOcenuBTN.UseVisualStyleBackColor = true;
+            UpisiOcenuBTN.Click += UpisiOcenuBTN_Click;
             // 
             // BackBTN
             // 
@@ -167,15 +171,15 @@
         #endregion
 
         private Panel LoginPanel;
-        private ComboBox comboPredmeti;
+        private ComboBox boxPredmet;
         private Label label3;
         private Label label2;
-        private Button RegistarBTN;
-        private TextBox textboxUcenik;
+        private Button UpisiOcenuBTN;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox textboxOpis;
         private Label label1;
-        private ComboBox comboBox1;
         private Button BackBTN;
+        private ComboBox boxOcene;
+        private ComboBox boxImeUcenika;
     }
 }

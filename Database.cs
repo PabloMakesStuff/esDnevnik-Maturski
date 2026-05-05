@@ -33,7 +33,7 @@ namespace Maturski
                 conn.Open();
                 using (var cmd = new OleDbCommand(query, conn))
                 {
-                    // ↓ osigurava da se dodaje samo ne null sto mi smanjuje buduci pritisak
+                    // osigurava da se dodaje samo ne null sto mi smanjuje buduci pritisak
                     if (parameters != null)
                         cmd.Parameters.AddRange(parameters);
 

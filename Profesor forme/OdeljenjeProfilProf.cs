@@ -53,5 +53,10 @@ namespace Maturski.Profesor_forme
         {
             FM.OpenForm(this, new UpisiOcenuForm(_odeljenje));
         }
+
+        private void UpisiIzostanakBTN_Click(object sender, EventArgs e)
+        {
+            FM.OpenForm(this, new UpisiNeopravdaniForm(_odeljenje));
+        }
     }
 }

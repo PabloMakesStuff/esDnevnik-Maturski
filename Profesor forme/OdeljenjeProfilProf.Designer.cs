@@ -77,6 +77,7 @@
             UpisiIzostanakBTN.TabIndex = 2;
             UpisiIzostanakBTN.Text = "Upisi izostanak";
             UpisiIzostanakBTN.UseVisualStyleBackColor = true;
+            UpisiIzostanakBTN.Click += UpisiIzostanakBTN_Click;
             // 
             // BackBTN
             // 

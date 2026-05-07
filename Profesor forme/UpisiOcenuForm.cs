@@ -14,6 +14,7 @@ namespace Maturski.Profesor_forme
         string polugodiste = (DateTime.Now.Month >= 9) ? "1" : "2";
         private string? _odeljenje = null;
         private string? _id_predmet = null;
+        private string? _id_ucenik = null;
         public UpisiOcenuForm(string? odeljenje)
         {
             _odeljenje = odeljenje;
@@ -31,6 +32,16 @@ namespace Maturski.Profesor_forme
 
                 boxImeUcenika.Items.Add(ime + " " + prezime);
             }
+        }
+        private void boxImeUcenika_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            string? box = boxImeUcenika.SelectedItem?.ToString();
+
+            var query = "SELECT ID_ucenik FROM ucenik WHERE ucenik.Ime + ' ' + ucenik.Prezime = ?";
+            var dt = Database.execQuery(query, new OleDbParameter("?", box));
+
+            if (dt.Rows.Count > 0)
+                _id_ucenik = dt.Rows[0]["id_ucenik"].ToString();
         }
         private void boxPredmet_SelectionChangeCommitted(object sender, EventArgs e)
         {

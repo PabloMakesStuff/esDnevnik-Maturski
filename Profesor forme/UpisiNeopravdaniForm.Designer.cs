@@ -1,6 +1,6 @@
 ﻿namespace Maturski.Profesor_forme
 {
-    partial class UpisiOcenuForm
+    partial class UpisiNeopravdaniForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,12 @@
         {
             LoginPanel = new Panel();
             boxImeUcenika = new ComboBox();
-            boxOcene = new ComboBox();
-            label4 = new Label();
-            textboxOpis = new TextBox();
+            boxStatus = new ComboBox();
             label1 = new Label();
             boxPredmet = new ComboBox();
             label3 = new Label();
             label2 = new Label();
-            UpisiOcenuBTN = new Button();
+            UpisiIzostanakBTN = new Button();
             BackBTN = new Button();
             LoginPanel.SuspendLayout();
             SuspendLayout();
@@ -49,77 +47,57 @@
             LoginPanel.BackColor = Color.CadetBlue;
             LoginPanel.BorderStyle = BorderStyle.Fixed3D;
             LoginPanel.Controls.Add(boxImeUcenika);
-            LoginPanel.Controls.Add(boxOcene);
-            LoginPanel.Controls.Add(label4);
-            LoginPanel.Controls.Add(textboxOpis);
+            LoginPanel.Controls.Add(boxStatus);
             LoginPanel.Controls.Add(label1);
             LoginPanel.Controls.Add(boxPredmet);
             LoginPanel.Controls.Add(label3);
             LoginPanel.Controls.Add(label2);
-            LoginPanel.Controls.Add(UpisiOcenuBTN);
-            LoginPanel.Location = new Point(251, 58);
+            LoginPanel.Controls.Add(UpisiIzostanakBTN);
+            LoginPanel.Location = new Point(294, 124);
             LoginPanel.Name = "LoginPanel";
-            LoginPanel.Size = new Size(520, 557);
-            LoginPanel.TabIndex = 1;
+            LoginPanel.Size = new Size(435, 424);
+            LoginPanel.TabIndex = 2;
             // 
             // boxImeUcenika
             // 
             boxImeUcenika.FormattingEnabled = true;
-            boxImeUcenika.Location = new Point(124, 161);
+            boxImeUcenika.Location = new Point(58, 208);
             boxImeUcenika.Name = "boxImeUcenika";
             boxImeUcenika.Size = new Size(268, 28);
             boxImeUcenika.TabIndex = 13;
             boxImeUcenika.SelectionChangeCommitted += boxImeUcenika_SelectionChangeCommitted;
             // 
-            // boxOcene
+            // boxStatus
             // 
-            boxOcene.FormattingEnabled = true;
-            boxOcene.Items.AddRange(new object[] { "1", "2", "3", "4", "5" });
-            boxOcene.Location = new Point(124, 262);
-            boxOcene.Name = "boxOcene";
-            boxOcene.Size = new Size(268, 28);
-            boxOcene.TabIndex = 12;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(124, 341);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 20);
-            label4.TabIndex = 11;
-            label4.Text = "Opis Ocene";
-            // 
-            // textboxOpis
-            // 
-            textboxOpis.Location = new Point(124, 364);
-            textboxOpis.Multiline = true;
-            textboxOpis.Name = "textboxOpis";
-            textboxOpis.Size = new Size(268, 98);
-            textboxOpis.TabIndex = 10;
+            boxStatus.FormattingEnabled = true;
+            boxStatus.Items.AddRange(new object[] { "opravdani", "neregulisani", "neopravdani" });
+            boxStatus.Location = new Point(58, 309);
+            boxStatus.Name = "boxStatus";
+            boxStatus.Size = new Size(268, 28);
+            boxStatus.TabIndex = 12;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(124, 239);
+            label1.Location = new Point(58, 286);
             label1.Name = "label1";
-            label1.Size = new Size(51, 20);
+            label1.Size = new Size(315, 20);
             label1.TabIndex = 9;
-            label1.Text = "Ocena";
+            label1.Text = "Status (Opravdani, Neopravdani, Neregulisani)";
             // 
             // boxPredmet
             // 
             boxPredmet.FormattingEnabled = true;
             boxPredmet.Items.AddRange(new object[] { "Matematika", "Fizika", "Srpski", "Engleski", "Nemacki", "Francuski", "Latinski", "Biologija", "Filozofija", "Sociologija", "Istorija", "Geografija", "Programiranje", "Veb programiranje", "Objektno Orijentisano Programiranje", "Primena Racunara", "Baze Podataka", "Programske Paradigme", "Veronauka" });
-            boxPredmet.Location = new Point(124, 59);
+            boxPredmet.Location = new Point(58, 106);
             boxPredmet.Name = "boxPredmet";
             boxPredmet.Size = new Size(268, 28);
             boxPredmet.TabIndex = 7;
-            boxPredmet.SelectionChangeCommitted += boxPredmet_SelectionChangeCommitted;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(124, 138);
+            label3.Location = new Point(58, 185);
             label3.Name = "label3";
             label3.Size = new Size(90, 20);
             label3.TabIndex = 6;
@@ -128,41 +106,42 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(124, 36);
+            label2.Location = new Point(58, 83);
             label2.Name = "label2";
             label2.Size = new Size(102, 20);
             label2.TabIndex = 5;
             label2.Text = "Ime Predmeta";
             // 
-            // UpisiOcenuBTN
+            // UpisiIzostanakBTN
             // 
-            UpisiOcenuBTN.Location = new Point(211, 510);
-            UpisiOcenuBTN.Name = "UpisiOcenuBTN";
-            UpisiOcenuBTN.Size = new Size(94, 29);
-            UpisiOcenuBTN.TabIndex = 4;
-            UpisiOcenuBTN.Text = "button1";
-            UpisiOcenuBTN.UseVisualStyleBackColor = true;
-            UpisiOcenuBTN.Click += UpisiOcenuBTN_Click;
+            UpisiIzostanakBTN.Location = new Point(168, 388);
+            UpisiIzostanakBTN.Name = "UpisiIzostanakBTN";
+            UpisiIzostanakBTN.Size = new Size(94, 29);
+            UpisiIzostanakBTN.TabIndex = 4;
+            UpisiIzostanakBTN.Text = "button1";
+            UpisiIzostanakBTN.UseVisualStyleBackColor = true;
+            UpisiIzostanakBTN.Click += UpisiIzostanakBTN_Click;
             // 
             // BackBTN
             // 
+            BackBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             BackBTN.Location = new Point(916, 12);
             BackBTN.Name = "BackBTN";
             BackBTN.Size = new Size(94, 55);
-            BackBTN.TabIndex = 2;
+            BackBTN.TabIndex = 3;
             BackBTN.Text = "Nazad";
             BackBTN.UseVisualStyleBackColor = true;
             BackBTN.Click += BackBTN_Click;
             // 
-            // UpisiOcenuForm
+            // UpisiNeopravdaniForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1022, 673);
             Controls.Add(BackBTN);
             Controls.Add(LoginPanel);
-            Name = "UpisiOcenuForm";
-            Text = "UpisiOcenuForm";
+            Name = "UpisiNeopravdaniForm";
+            Text = "UpisiNeopravdaniForm";
             LoginPanel.ResumeLayout(false);
             LoginPanel.PerformLayout();
             ResumeLayout(false);
@@ -172,15 +151,13 @@
         #endregion
 
         private Panel LoginPanel;
+        private ComboBox boxImeUcenika;
+        private ComboBox boxStatus;
+        private Label label1;
         private ComboBox boxPredmet;
         private Label label3;
         private Label label2;
-        private Button UpisiOcenuBTN;
-        private Label label4;
-        private TextBox textboxOpis;
-        private Label label1;
+        private Button UpisiIzostanakBTN;
         private Button BackBTN;
-        private ComboBox boxOcene;
-        private ComboBox boxImeUcenika;
     }
 }

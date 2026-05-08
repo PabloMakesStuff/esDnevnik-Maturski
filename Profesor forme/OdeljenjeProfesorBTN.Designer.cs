@@ -66,22 +66,22 @@
             helperBTN.FlatAppearance.MouseDownBackColor = Color.Transparent;
             helperBTN.FlatAppearance.MouseOverBackColor = Color.Transparent;
             helperBTN.FlatStyle = FlatStyle.Popup;
-            helperBTN.Location = new Point(15, 3);
+            helperBTN.Location = new Point(3, 3);
             helperBTN.Name = "helperBTN";
-            helperBTN.Size = new Size(456, 190);
+            helperBTN.Size = new Size(467, 190);
             helperBTN.TabIndex = 2;
             helperBTN.UseVisualStyleBackColor = false;
             helperBTN.Click += helperBTN_Click;
             // 
-            // OdeljenjaProfesor
+            // OdeljenjeProfesorBTN
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlDarkDark;
+            BackColor = SystemColors.ActiveCaption;
             Controls.Add(labelPredmet);
             Controls.Add(labelOdeljenje);
             Controls.Add(helperBTN);
-            Name = "OdeljenjaProfesor";
+            Name = "OdeljenjeProfesorBTN";
             Size = new Size(487, 196);
             ResumeLayout(false);
             PerformLayout();

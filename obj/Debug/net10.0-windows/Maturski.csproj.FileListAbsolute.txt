@@ -1,4 +1,3 @@
-C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.csproj.AssemblyReference.cache
 C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\Maturski.exe
 C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\Maturski.dll.config
 C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\Maturski.deps.json
@@ -7,6 +6,7 @@ C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\Maturski.dll
 C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\Maturski.pdb
 C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\System.Data.OleDb.dll
 C:\Users\vasic\source\repos\Maturski\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.Data.OleDb.dll
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.csproj.AssemblyReference.cache
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.LoginForm.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.BaseFormProfesor.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.OdeljenjeProfesorBTN.resources
@@ -15,6 +15,7 @@ C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.ProfesorUcenikProfil.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UcenikOceneCard.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UcenikProfilIndividuo.resources
+C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UpisiNeopravdaniForm.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UpisiOcenuForm.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Properties.Resources.resources
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.RegistarForm.resources
@@ -37,4 +38,3 @@ C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\refint\Maturski.d
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.pdb
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.genruntimeconfig.cache
 C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\ref\Maturski.dll
-C:\Users\vasic\source\repos\Maturski\obj\Debug\net10.0-windows\Maturski.Profesor_forme.UpisiNeopravdaniForm.resources

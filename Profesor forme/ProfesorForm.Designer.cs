@@ -34,7 +34,9 @@
             // 
             // labelDobarDan
             // 
-            labelDobarDan.Location = new Point(230, 46);
+            labelDobarDan.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelDobarDan.Location = new Point(235, 74);
+            labelDobarDan.Size = new Size(151, 60);
             // 
             // panelParentTable
             // 
@@ -43,12 +45,13 @@
             // IzlogujSeBTN
             // 
             IzlogujSeBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            IzlogujSeBTN.Font = new Font("Segoe UI", 12F);
             // 
             // tablePanelChild
             // 
             tablePanelChild.AutoScroll = true;
             tablePanelChild.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tablePanelChild.BackColor = SystemColors.ActiveCaption;
+            tablePanelChild.BackColor = Color.FromArgb(144, 145, 139);
             tablePanelChild.ColumnCount = 3;
             tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));
             tablePanelChild.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 33.3333321F));

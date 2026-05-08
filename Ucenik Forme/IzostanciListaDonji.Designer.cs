@@ -51,9 +51,9 @@
             labelNeregulisani.Font = new Font("Segoe UI", 22F);
             labelNeregulisani.Location = new Point(880, 15);
             labelNeregulisani.Name = "labelNeregulisani";
-            labelNeregulisani.Size = new Size(248, 50);
+            labelNeregulisani.Size = new Size(227, 50);
             labelNeregulisani.TabIndex = 6;
-            labelNeregulisani.Text = "Neregulisanih";
+            labelNeregulisani.Text = "Neregulisani";
             labelNeregulisani.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // labelNeopravdani
@@ -87,7 +87,7 @@
             Controls.Add(labelNeopravdani);
             Controls.Add(labelOpravdani);
             Name = "IzostanciListaDonji";
-            Size = new Size(1034, 80);
+            Size = new Size(1108, 80);
             ResumeLayout(false);
             PerformLayout();
         }

@@ -39,7 +39,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ControlDark;
+            panel1.BackColor = Color.FromArgb(38, 132, 3);
             panel1.Controls.Add(IzlogujSeBTN);
             panel1.Controls.Add(labelDobarDan);
             panel1.Controls.Add(pictureBox1);
@@ -72,9 +72,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.ControlDark;
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Image = Properties.Resources.logo_esdnevnik;
+            pictureBox1.Image = Properties.Resources.logo_esdnevnik_bezpoz;
             pictureBox1.InitialImage = Properties.Resources.loading_image;
             pictureBox1.Location = new Point(27, 22);
             pictureBox1.Name = "pictureBox1";
@@ -87,7 +87,7 @@
             // 
             panelParentTable.AutoSize = true;
             panelParentTable.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            panelParentTable.BackColor = SystemColors.ActiveCaption;
+            panelParentTable.BackColor = Color.FromArgb(128, 151, 115);
             panelParentTable.Dock = DockStyle.Fill;
             panelParentTable.Location = new Point(0, 209);
             panelParentTable.Name = "panelParentTable";

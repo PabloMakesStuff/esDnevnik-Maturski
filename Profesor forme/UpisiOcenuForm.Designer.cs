@@ -46,7 +46,7 @@
             // 
             LoginPanel.Anchor = AnchorStyles.None;
             LoginPanel.AutoSize = true;
-            LoginPanel.BackColor = Color.CadetBlue;
+            LoginPanel.BackColor = Color.FromArgb(76, 157, 160);
             LoginPanel.BorderStyle = BorderStyle.Fixed3D;
             LoginPanel.Controls.Add(boxImeUcenika);
             LoginPanel.Controls.Add(boxOcene);
@@ -136,11 +136,11 @@
             // 
             // UpisiOcenuBTN
             // 
-            UpisiOcenuBTN.Location = new Point(211, 510);
+            UpisiOcenuBTN.Location = new Point(199, 496);
             UpisiOcenuBTN.Name = "UpisiOcenuBTN";
-            UpisiOcenuBTN.Size = new Size(94, 29);
+            UpisiOcenuBTN.Size = new Size(119, 43);
             UpisiOcenuBTN.TabIndex = 4;
-            UpisiOcenuBTN.Text = "button1";
+            UpisiOcenuBTN.Text = "Upisi Ocenu";
             UpisiOcenuBTN.UseVisualStyleBackColor = true;
             UpisiOcenuBTN.Click += UpisiOcenuBTN_Click;
             // 

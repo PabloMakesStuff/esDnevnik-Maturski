@@ -1,9 +1,5 @@
 using Maturski.Profesor_forme;
-using System.ComponentModel;
 using System.Data.OleDb;
-using System.Security.Cryptography.X509Certificates;
-using static System.Windows.Forms.DataFormats;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Maturski
 {
@@ -13,6 +9,7 @@ namespace Maturski
         {
             InitializeComponent();
 
+            LoginPanel.BackColor = ColorTranslator.FromHtml("#50A381");
             //privremeno za testiranje, OBAVEZNO OBRISI KASNIJE!!!!!!!!!
             Email.Text = "zk@gmail.com";
             Sifra.Text = "12345";
@@ -63,7 +60,7 @@ namespace Maturski
 
                     //ProfesorForm f = new ProfesorForm(profesor);
                     ID_profesor = refId;
-                    FM.OpenForm(this,new ProfesorForm());
+                    FM.OpenForm(this, new ProfesorForm());
                 }
                 else
                 {

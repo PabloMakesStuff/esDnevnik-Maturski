@@ -79,5 +79,35 @@ namespace Maturski.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_esdnevnik_bezpoz {
+            get {
+                object obj = ResourceManager.GetObject("logo_esdnevnik_bezpoz", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_esdnevnik_slova {
+            get {
+                object obj = ResourceManager.GetObject("logo_esdnevnik_slova", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_esdnevnik1 {
+            get {
+                object obj = ResourceManager.GetObject("logo_esdnevnik1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

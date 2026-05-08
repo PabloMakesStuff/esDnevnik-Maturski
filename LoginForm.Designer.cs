@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             LoginPanel = new Panel();
+            pictureBox1 = new PictureBox();
+            label3 = new Label();
+            label2 = new Label();
             RegistarBTN = new Button();
             label1 = new Label();
             LoginBTN = new Button();
             Sifra = new TextBox();
             Email = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
             LoginPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // LoginPanel
@@ -45,6 +47,7 @@
             LoginPanel.AutoSize = true;
             LoginPanel.BackColor = Color.CadetBlue;
             LoginPanel.BorderStyle = BorderStyle.Fixed3D;
+            LoginPanel.Controls.Add(pictureBox1);
             LoginPanel.Controls.Add(label3);
             LoginPanel.Controls.Add(label2);
             LoginPanel.Controls.Add(RegistarBTN);
@@ -57,20 +60,50 @@
             LoginPanel.Size = new Size(534, 696);
             LoginPanel.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.logo_esdnevnik_bezpoz;
+            pictureBox1.Location = new Point(47, 19);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(155, 157);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 12F);
+            label3.Location = new Point(90, 339);
+            label3.Name = "label3";
+            label3.Size = new Size(51, 28);
+            label3.TabIndex = 6;
+            label3.Text = "Sifra";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.Location = new Point(90, 193);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 28);
+            label2.TabIndex = 5;
+            label2.Text = "Email";
+            // 
             // RegistarBTN
             // 
-            RegistarBTN.Location = new Point(220, 605);
+            RegistarBTN.Location = new Point(218, 628);
             RegistarBTN.Name = "RegistarBTN";
-            RegistarBTN.Size = new Size(94, 29);
+            RegistarBTN.Size = new Size(94, 48);
             RegistarBTN.TabIndex = 4;
-            RegistarBTN.Text = "button1";
+            RegistarBTN.Text = "Register";
             RegistarBTN.UseVisualStyleBackColor = true;
             RegistarBTN.Click += RegistarBTN_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(133, 525);
+            label1.Location = new Point(133, 576);
             label1.Name = "label1";
             label1.Size = new Size(259, 20);
             label1.TabIndex = 3;
@@ -78,45 +111,32 @@
             // 
             // LoginBTN
             // 
-            LoginBTN.Location = new Point(220, 420);
+            LoginBTN.Location = new Point(218, 495);
             LoginBTN.Name = "LoginBTN";
-            LoginBTN.Size = new Size(94, 29);
+            LoginBTN.Size = new Size(94, 48);
             LoginBTN.TabIndex = 2;
-            LoginBTN.Text = "button1";
+            LoginBTN.Text = "Login";
             LoginBTN.UseVisualStyleBackColor = true;
             LoginBTN.Click += LoginBTN_Click;
             // 
             // Sifra
             // 
-            Sifra.Location = new Point(92, 279);
+            Sifra.Font = new Font("Segoe UI", 12F);
+            Sifra.Location = new Point(90, 370);
+            Sifra.Multiline = true;
             Sifra.Name = "Sifra";
-            Sifra.Size = new Size(125, 27);
+            Sifra.PasswordChar = '*';
+            Sifra.Size = new Size(192, 39);
             Sifra.TabIndex = 1;
             // 
             // Email
             // 
-            Email.Location = new Point(92, 133);
+            Email.Font = new Font("Segoe UI", 12F);
+            Email.Location = new Point(90, 224);
+            Email.Multiline = true;
             Email.Name = "Email";
-            Email.Size = new Size(125, 27);
+            Email.Size = new Size(192, 39);
             Email.TabIndex = 0;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(92, 110);
-            label2.Name = "label2";
-            label2.Size = new Size(46, 20);
-            label2.TabIndex = 5;
-            label2.Text = "Email";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(92, 256);
-            label3.Name = "label3";
-            label3.Size = new Size(39, 20);
-            label3.TabIndex = 6;
-            label3.Text = "Sifra";
             // 
             // LoginForm
             // 
@@ -128,6 +148,7 @@
             Text = "esDnevnik";
             LoginPanel.ResumeLayout(false);
             LoginPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -144,5 +165,6 @@
         private Label label1;
         private Label label3;
         private Label label2;
+        private PictureBox pictureBox1;
     }
 }

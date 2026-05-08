@@ -1,14 +1,6 @@
 ﻿using Maturski.Ucenik_Forme;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
-using System.Diagnostics.CodeAnalysis;
-using System.Drawing;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Windows.Forms;
 
 namespace Maturski.Profesor_forme
 {
@@ -33,7 +25,6 @@ namespace Maturski.Profesor_forme
             flowPanel.AutoScroll = true;
             tableLayout.AutoScroll = true;
         }
-
         private void BackBTN_Click(object sender, EventArgs e)
         {
             FM.OpenForm(this, new OdeljenjeProfilProf(odeljenje_));
@@ -70,6 +61,8 @@ namespace Maturski.Profesor_forme
 
             flowPanel.Visible = true;
             tableLayout.Visible = false;
+
+            FM.AddCenteredControl(new IzostanciListaVrh(), flowPanel);
 
             // direktno recikliran kod iz ucenikfrom izostancibtn
             string query = "SELECT p.nazivPred, i.status, i.ID_ucenik " +

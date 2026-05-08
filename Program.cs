@@ -1,6 +1,3 @@
-using Maturski.Profesor_forme;
-using System.Drawing.Drawing2D;
-
 namespace Maturski
 {
     internal static class Program

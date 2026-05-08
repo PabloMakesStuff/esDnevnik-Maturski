@@ -1,17 +1,6 @@
 ﻿using Maturski.Ucenik_Forme;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Printing;
-using System.Text;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.DataFormats;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Maturski
 {
@@ -127,7 +116,7 @@ namespace Maturski
                 string predmet = row["nazivPred"].ToString();
                 string status = row["status"].ToString();
 
-                if(!izostanci.ContainsKey(predmet))
+                if (!izostanci.ContainsKey(predmet))
                     izostanci[predmet] = (predmet, 0, 0, 0);
 
                 var i = izostanci[predmet];

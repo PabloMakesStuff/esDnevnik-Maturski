@@ -44,7 +44,7 @@
             // 
             LoginPanel.Anchor = AnchorStyles.None;
             LoginPanel.AutoSize = true;
-            LoginPanel.BackColor = Color.CadetBlue;
+            LoginPanel.BackColor = Color.FromArgb(76, 157, 160);
             LoginPanel.BorderStyle = BorderStyle.Fixed3D;
             LoginPanel.Controls.Add(boxImeUcenika);
             LoginPanel.Controls.Add(boxStatus);
@@ -53,15 +53,15 @@
             LoginPanel.Controls.Add(label3);
             LoginPanel.Controls.Add(label2);
             LoginPanel.Controls.Add(UpisiIzostanakBTN);
-            LoginPanel.Location = new Point(294, 124);
+            LoginPanel.Location = new Point(272, 106);
             LoginPanel.Name = "LoginPanel";
-            LoginPanel.Size = new Size(435, 424);
+            LoginPanel.Size = new Size(479, 461);
             LoginPanel.TabIndex = 2;
             // 
             // boxImeUcenika
             // 
             boxImeUcenika.FormattingEnabled = true;
-            boxImeUcenika.Location = new Point(58, 208);
+            boxImeUcenika.Location = new Point(80, 181);
             boxImeUcenika.Name = "boxImeUcenika";
             boxImeUcenika.Size = new Size(268, 28);
             boxImeUcenika.TabIndex = 13;
@@ -71,7 +71,7 @@
             // 
             boxStatus.FormattingEnabled = true;
             boxStatus.Items.AddRange(new object[] { "opravdani", "neregulisani", "neopravdani" });
-            boxStatus.Location = new Point(58, 309);
+            boxStatus.Location = new Point(80, 282);
             boxStatus.Name = "boxStatus";
             boxStatus.Size = new Size(268, 28);
             boxStatus.TabIndex = 12;
@@ -79,7 +79,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(58, 286);
+            label1.Location = new Point(80, 259);
             label1.Name = "label1";
             label1.Size = new Size(315, 20);
             label1.TabIndex = 9;
@@ -89,15 +89,16 @@
             // 
             boxPredmet.FormattingEnabled = true;
             boxPredmet.Items.AddRange(new object[] { "Matematika", "Fizika", "Srpski", "Engleski", "Nemacki", "Francuski", "Latinski", "Biologija", "Filozofija", "Sociologija", "Istorija", "Geografija", "Programiranje", "Veb programiranje", "Objektno Orijentisano Programiranje", "Primena Racunara", "Baze Podataka", "Programske Paradigme", "Veronauka" });
-            boxPredmet.Location = new Point(58, 106);
+            boxPredmet.Location = new Point(80, 79);
             boxPredmet.Name = "boxPredmet";
             boxPredmet.Size = new Size(268, 28);
             boxPredmet.TabIndex = 7;
+            boxPredmet.SelectedIndexChanged += boxPredmet_SelectedIndexChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(58, 185);
+            label3.Location = new Point(80, 158);
             label3.Name = "label3";
             label3.Size = new Size(90, 20);
             label3.TabIndex = 6;
@@ -106,7 +107,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(58, 83);
+            label2.Location = new Point(80, 56);
             label2.Name = "label2";
             label2.Size = new Size(102, 20);
             label2.TabIndex = 5;
@@ -114,11 +115,11 @@
             // 
             // UpisiIzostanakBTN
             // 
-            UpisiIzostanakBTN.Location = new Point(168, 388);
+            UpisiIzostanakBTN.Location = new Point(174, 392);
             UpisiIzostanakBTN.Name = "UpisiIzostanakBTN";
-            UpisiIzostanakBTN.Size = new Size(94, 29);
+            UpisiIzostanakBTN.Size = new Size(129, 50);
             UpisiIzostanakBTN.TabIndex = 4;
-            UpisiIzostanakBTN.Text = "button1";
+            UpisiIzostanakBTN.Text = "Upisi Izostanak";
             UpisiIzostanakBTN.UseVisualStyleBackColor = true;
             UpisiIzostanakBTN.Click += UpisiIzostanakBTN_Click;
             // 

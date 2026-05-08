@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.OleDb;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using static System.Net.WebRequestMethods;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+﻿using System.Data.OleDb;
 
 namespace Maturski
 {
@@ -42,7 +32,8 @@ namespace Maturski
                 // ne znam zasto
                 bool provera = false;
                 foreach (char c in odeljenje)
-                    if (char.IsDigit(c)) {
+                    if (char.IsDigit(c))
+                    {
                         provera = true;
                         break;
                     }

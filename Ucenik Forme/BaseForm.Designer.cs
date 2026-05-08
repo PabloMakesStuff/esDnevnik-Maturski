@@ -40,7 +40,7 @@
             // 
             // panelTop
             // 
-            panelTop.BackColor = SystemColors.ControlDark;
+            panelTop.BackColor = Color.FromArgb(122, 194, 255);
             panelTop.Controls.Add(logoutBTN);
             panelTop.Controls.Add(IzostanciBTN);
             panelTop.Controls.Add(OceneBTN);
@@ -93,9 +93,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.ControlDark;
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImageLayout = ImageLayout.Center;
-            pictureBox1.Image = Properties.Resources.logo_esdnevnik;
+            pictureBox1.Image = Properties.Resources.logo_esdnevnik_bezpoz;
             pictureBox1.InitialImage = Properties.Resources.loading_image;
             pictureBox1.Location = new Point(27, 22);
             pictureBox1.Name = "pictureBox1";

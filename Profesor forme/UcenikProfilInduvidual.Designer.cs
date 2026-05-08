@@ -35,7 +35,9 @@
             // labelImeUcenika
             // 
             labelImeUcenika.AutoSize = true;
+            labelImeUcenika.BackColor = Color.Transparent;
             labelImeUcenika.Font = new Font("Segoe UI", 30F);
+            labelImeUcenika.ForeColor = SystemColors.ControlText;
             labelImeUcenika.ImageAlign = ContentAlignment.MiddleLeft;
             labelImeUcenika.Location = new Point(3, 65);
             labelImeUcenika.Name = "labelImeUcenika";
@@ -47,9 +49,11 @@
             // UcenikIndividuoBTN
             // 
             UcenikIndividuoBTN.BackColor = Color.Transparent;
-            UcenikIndividuoBTN.Location = new Point(0, 0);
+            UcenikIndividuoBTN.FlatStyle = FlatStyle.Popup;
+            UcenikIndividuoBTN.ForeColor = Color.Transparent;
+            UcenikIndividuoBTN.Location = new Point(3, 3);
             UcenikIndividuoBTN.Name = "UcenikIndividuoBTN";
-            UcenikIndividuoBTN.Size = new Size(460, 196);
+            UcenikIndividuoBTN.Size = new Size(454, 190);
             UcenikIndividuoBTN.TabIndex = 1;
             UcenikIndividuoBTN.UseVisualStyleBackColor = false;
             UcenikIndividuoBTN.Click += UcenikIndividuoBTN_Click;

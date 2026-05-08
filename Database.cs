@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.OleDb;
-using System.Configuration;
 
 //ovo je pomocni fajl koji spaja bazu podataka sa celom aplikacijom
 //pravi globalne funkcije koje koristim kasnije

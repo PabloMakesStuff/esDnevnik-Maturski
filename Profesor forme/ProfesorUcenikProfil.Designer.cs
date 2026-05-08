@@ -40,7 +40,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveBorder;
+            panel1.BackColor = Color.FromArgb(80, 163, 129);
             panel1.Controls.Add(BackBTN);
             panel1.Controls.Add(IzostanciBTN);
             panel1.Controls.Add(OceneBTN);
@@ -54,6 +54,7 @@
             // BackBTN
             // 
             BackBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            BackBTN.Font = new Font("Segoe UI", 12F);
             BackBTN.Location = new Point(916, 12);
             BackBTN.Name = "BackBTN";
             BackBTN.Size = new Size(94, 42);
@@ -65,6 +66,7 @@
             // IzostanciBTN
             // 
             IzostanciBTN.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            IzostanciBTN.Font = new Font("Segoe UI", 12F);
             IzostanciBTN.Location = new Point(635, 90);
             IzostanciBTN.Name = "IzostanciBTN";
             IzostanciBTN.Size = new Size(170, 53);
@@ -75,6 +77,7 @@
             // 
             // OceneBTN
             // 
+            OceneBTN.Font = new Font("Segoe UI", 12F);
             OceneBTN.Location = new Point(218, 90);
             OceneBTN.Name = "OceneBTN";
             OceneBTN.Size = new Size(170, 53);
@@ -86,7 +89,7 @@
             // labelImeUcenik
             // 
             labelImeUcenik.AutoSize = true;
-            labelImeUcenik.Font = new Font("Segoe UI", 20F);
+            labelImeUcenik.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             labelImeUcenik.Location = new Point(12, 22);
             labelImeUcenik.Name = "labelImeUcenik";
             labelImeUcenik.Size = new Size(109, 46);

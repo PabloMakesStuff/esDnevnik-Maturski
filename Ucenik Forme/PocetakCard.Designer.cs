@@ -82,7 +82,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonShadow;
+            BackColor = Color.FromArgb(154, 138, 173);
             Controls.Add(labelDatum);
             Controls.Add(labelPredmet);
             Controls.Add(labelOpis);

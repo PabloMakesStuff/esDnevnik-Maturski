@@ -49,6 +49,7 @@
             // 
             // panelTop
             // 
+            panelTop.BackColor = Color.FromArgb(80, 163, 129);
             panelTop.Controls.Add(UpisiOcenuBTN);
             panelTop.Controls.Add(UpisiIzostanakBTN);
             panelTop.Controls.Add(BackBTN);

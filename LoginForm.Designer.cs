@@ -92,6 +92,7 @@
             // 
             // RegistarBTN
             // 
+            RegistarBTN.Font = new Font("Segoe UI", 12F);
             RegistarBTN.Location = new Point(218, 628);
             RegistarBTN.Name = "RegistarBTN";
             RegistarBTN.Size = new Size(94, 48);
@@ -111,6 +112,7 @@
             // 
             // LoginBTN
             // 
+            LoginBTN.Font = new Font("Segoe UI", 12F);
             LoginBTN.Location = new Point(218, 495);
             LoginBTN.Name = "LoginBTN";
             LoginBTN.Size = new Size(94, 48);

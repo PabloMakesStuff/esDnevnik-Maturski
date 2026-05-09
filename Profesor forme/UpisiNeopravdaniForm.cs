@@ -71,21 +71,19 @@ namespace Maturski.Profesor_forme
 
             var query = "INSERT INTO izostanci (ID_ucenik, ID_predmet, datum, status) VALUES (?,?,?,?)";
 
-            Database.execNonQuery(query, new OleDbParameter[] {
+            Database.execNonQuery(query,
                 new OleDbParameter("?", _id_ucenik),
                 new OleDbParameter("?", _id_predmet),
-                new OleDbParameter("?", DateTime.Now.ToString()),
-                new OleDbParameter("?", boxStatus.SelectedItem.ToString())
-            });
+                new OleDbParameter("?", DateTime.Now.ToShortDateString()),
+                new OleDbParameter("?", boxStatus.SelectedItem.ToString()));
 
             MessageBox.Show("Uspesno ste upisali neopravdani!", "Uspesno!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FM.OpenForm(this, new OdeljenjeProfilProf(_odeljenje));
         }
 
         private void BackBTN_Click(object sender, EventArgs e)
         {
             FM.OpenForm(this, new OdeljenjeProfilProf(_odeljenje));
         }
-
-        
     }
 }

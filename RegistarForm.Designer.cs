@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             LoginPanel = new Panel();
+            BackBTN = new Button();
             textBoxOdeljenje = new TextBox();
             LabelOdeljenje = new Label();
             Label = new Label();
@@ -42,7 +43,6 @@
             RegistarBTN = new Button();
             Sifra = new TextBox();
             Email = new TextBox();
-            BackBTN = new Button();
             LoginPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,130 +66,143 @@
             LoginPanel.Controls.Add(RegistarBTN);
             LoginPanel.Controls.Add(Sifra);
             LoginPanel.Controls.Add(Email);
+            LoginPanel.Font = new Font("Segoe UI", 12F);
             LoginPanel.Location = new Point(444, 140);
             LoginPanel.Name = "LoginPanel";
             LoginPanel.Size = new Size(534, 696);
             LoginPanel.TabIndex = 1;
             // 
+            // BackBTN
+            // 
+            BackBTN.Location = new Point(3, 641);
+            BackBTN.Name = "BackBTN";
+            BackBTN.Size = new Size(94, 48);
+            BackBTN.TabIndex = 16;
+            BackBTN.Text = "Nazad";
+            BackBTN.UseVisualStyleBackColor = true;
+            BackBTN.Click += BackBTN_Click;
+            // 
             // textBoxOdeljenje
             // 
-            textBoxOdeljenje.Location = new Point(92, 474);
+            textBoxOdeljenje.Font = new Font("Segoe UI", 12F);
+            textBoxOdeljenje.Location = new Point(90, 476);
             textBoxOdeljenje.Name = "textBoxOdeljenje";
-            textBoxOdeljenje.Size = new Size(125, 27);
+            textBoxOdeljenje.Size = new Size(95, 34);
             textBoxOdeljenje.TabIndex = 15;
             // 
             // LabelOdeljenje
             // 
             LabelOdeljenje.AutoSize = true;
-            LabelOdeljenje.Location = new Point(92, 451);
+            LabelOdeljenje.Font = new Font("Segoe UI", 12F);
+            LabelOdeljenje.Location = new Point(90, 445);
             LabelOdeljenje.Name = "LabelOdeljenje";
-            LabelOdeljenje.Size = new Size(73, 20);
+            LabelOdeljenje.Size = new Size(95, 28);
             LabelOdeljenje.TabIndex = 14;
             LabelOdeljenje.Text = "Odeljenje";
             // 
             // Label
             // 
             Label.AutoSize = true;
-            Label.Location = new Point(92, 367);
+            Label.Font = new Font("Segoe UI", 12F);
+            Label.Location = new Point(90, 355);
             Label.Name = "Label";
-            Label.Size = new Size(49, 20);
+            Label.Size = new Size(65, 28);
             Label.TabIndex = 12;
             Label.Text = "Status";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(92, 282);
+            label4.Font = new Font("Segoe UI", 12F);
+            label4.Location = new Point(90, 270);
             label4.Name = "label4";
-            label4.Size = new Size(39, 20);
+            label4.Size = new Size(51, 28);
             label4.TabIndex = 11;
             label4.Text = "Sifra";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(92, 198);
+            label3.Font = new Font("Segoe UI", 12F);
+            label3.Location = new Point(90, 183);
             label3.Name = "label3";
-            label3.Size = new Size(46, 20);
+            label3.Size = new Size(59, 28);
             label3.TabIndex = 10;
             label3.Text = "Email";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(92, 132);
+            label2.Font = new Font("Segoe UI", 12F);
+            label2.Location = new Point(90, 102);
             label2.Name = "label2";
-            label2.Size = new Size(62, 20);
+            label2.Size = new Size(81, 28);
             label2.TabIndex = 9;
             label2.Text = "Prezime";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(92, 56);
+            label1.Location = new Point(90, 20);
             label1.Name = "label1";
-            label1.Size = new Size(34, 20);
+            label1.Size = new Size(44, 28);
             label1.TabIndex = 8;
             label1.Text = "Ime";
             // 
             // ImeText
             // 
-            ImeText.Location = new Point(92, 79);
+            ImeText.Font = new Font("Segoe UI", 12F);
+            ImeText.Location = new Point(90, 51);
             ImeText.Name = "ImeText";
-            ImeText.Size = new Size(125, 27);
+            ImeText.Size = new Size(236, 34);
             ImeText.TabIndex = 7;
             // 
             // PrezimeText
             // 
-            PrezimeText.Location = new Point(92, 155);
+            PrezimeText.Font = new Font("Segoe UI", 12F);
+            PrezimeText.Location = new Point(90, 133);
             PrezimeText.Name = "PrezimeText";
-            PrezimeText.Size = new Size(125, 27);
+            PrezimeText.Size = new Size(236, 34);
             PrezimeText.TabIndex = 6;
             // 
             // ComboBox1
             // 
             ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboBox1.Font = new Font("Segoe UI", 12F);
             ComboBox1.FormattingEnabled = true;
             ComboBox1.Items.AddRange(new object[] { "Profesor", "Ucenik" });
-            ComboBox1.Location = new Point(92, 390);
+            ComboBox1.Location = new Point(90, 386);
             ComboBox1.Name = "ComboBox1";
-            ComboBox1.Size = new Size(151, 28);
+            ComboBox1.Size = new Size(173, 36);
             ComboBox1.TabIndex = 5;
             ComboBox1.SelectedIndexChanged += comboBoxChange;
             // 
             // RegistarBTN
             // 
-            RegistarBTN.Location = new Point(221, 547);
+            RegistarBTN.Location = new Point(218, 559);
             RegistarBTN.Name = "RegistarBTN";
-            RegistarBTN.Size = new Size(94, 29);
+            RegistarBTN.Size = new Size(94, 48);
             RegistarBTN.TabIndex = 2;
-            RegistarBTN.Text = "button1";
+            RegistarBTN.Text = "Register";
             RegistarBTN.UseVisualStyleBackColor = true;
             RegistarBTN.Click += RegistarBTN_Click;
             // 
             // Sifra
             // 
-            Sifra.Location = new Point(92, 305);
+            Sifra.Font = new Font("Segoe UI", 12F);
+            Sifra.Location = new Point(90, 301);
             Sifra.Name = "Sifra";
-            Sifra.Size = new Size(125, 27);
+            Sifra.PasswordChar = '*';
+            Sifra.Size = new Size(236, 34);
             Sifra.TabIndex = 1;
             // 
             // Email
             // 
-            Email.Location = new Point(92, 221);
+            Email.Font = new Font("Segoe UI", 12F);
+            Email.Location = new Point(90, 212);
             Email.Name = "Email";
-            Email.Size = new Size(125, 27);
+            Email.Size = new Size(236, 34);
             Email.TabIndex = 0;
-            // 
-            // BackBTN
-            // 
-            BackBTN.Location = new Point(32, 644);
-            BackBTN.Name = "BackBTN";
-            BackBTN.Size = new Size(94, 29);
-            BackBTN.TabIndex = 16;
-            BackBTN.Text = "button1";
-            BackBTN.UseVisualStyleBackColor = true;
-            BackBTN.Click += BackBTN_Click;
             // 
             // RegistarForm
             // 

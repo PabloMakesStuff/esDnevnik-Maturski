@@ -5,7 +5,7 @@ namespace Maturski.Profesor_forme
 {
     public partial class UpisiOcenuForm : Form
     {
-        string polugodiste = (DateTime.Now.Month >= 9 || DateTime.Now.Month == 1) ? "1" : "2";
+        string polugodiste = (DateTime.Now.Month >= 9 || DateTime.Now.Month <= 1) ? "1" : "2";
         private string? _odeljenje = null;
         private string? _id_predmet = null;
         private string? _id_ucenik = null;
@@ -32,7 +32,7 @@ namespace Maturski.Profesor_forme
         {
             string? box = boxImeUcenika.SelectedItem?.ToString();
 
-            var query = "SELECT ID_ucenik FROM ucenik WHERE ucenik.Ime + ' ' + ucenik.Prezime = ?";
+            var query = "SELECT ID_ucenik FROM ucenik WHERE ucenik.Ime & ' ' & ucenik.Prezime = ?";
             var dt = Database.execQuery(query, new OleDbParameter("?", box));
 
             if (dt.Rows.Count > 0)
@@ -87,17 +87,17 @@ namespace Maturski.Profesor_forme
 
             var query = "INSERT INTO ocene (id_ucenik, id_predmet, id_profesor, broj_oc, opis, datum, polugodiste) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
-            Database.execNonQuery(query, new OleDbParameter[] {
-               new OleDbParameter("?", _id_ucenik.ToString()),
-               new OleDbParameter("?", _id_predmet.ToString()),
-               new OleDbParameter("?", LoginForm.ID_profesor.ToString()),
-               new OleDbParameter("?", boxOcene.SelectedItem.ToString()),
-               new OleDbParameter("?", textboxOpis.Text),
-               new OleDbParameter("?", DateTime.Now),
-               new OleDbParameter("?", polugodiste)
-           });
+            Database.execNonQuery(query,
+                new OleDbParameter("?", Convert.ToInt32(_id_ucenik)),
+                new OleDbParameter("?", Convert.ToInt32(_id_predmet)),
+                new OleDbParameter("?", LoginForm.ID_profesor.ToString()),
+                new OleDbParameter("?", Convert.ToInt32(boxOcene.SelectedItem)),
+                new OleDbParameter("?", textboxOpis.Text),
+                new OleDbParameter("?", DateTime.Now.ToShortDateString()),
+                new OleDbParameter("?", polugodiste));
 
             MessageBox.Show("Uspesno ste upisali ocenu!", "Uspesno!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FM.OpenForm(this, new OdeljenjeProfilProf(_odeljenje));
         }
     }
 }

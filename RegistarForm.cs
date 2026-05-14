@@ -6,6 +6,8 @@ namespace Maturski
     {
         public RegistarForm()
         {
+            this.Text = "Register";
+            this.Icon = new Icon(FM.ikonica);
             InitializeComponent();
             LabelOdeljenje.Visible = false;
             textBoxOdeljenje.Visible = false;

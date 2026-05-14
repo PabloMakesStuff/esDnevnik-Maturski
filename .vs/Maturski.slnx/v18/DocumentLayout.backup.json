@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\vasic\\source\\repos\\Maturski\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\profesorucenikprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\profesorucenikprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:ucenik forme\\ucenikform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\baseformprofesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\baseformprofesor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\odeljenjeprofilprof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\odeljenjeprofilprof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\profesorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\profesorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\registarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:registarform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\profesorucenikprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\profesorucenikprofil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|C:\\Users\\vasic\\source\\repos\\Maturski\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\upisineopravdaniform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\upisineopravdaniform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|c:\\users\\vasic\\source\\repos\\maturski\\profesor forme\\upisiocenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70C7076C-1480-F3EF-BBE8-9FF2F3DEDF9B}|Maturski.csproj|solutionrelative:profesor forme\\upisiocenuform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,65 +43,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UcenikForm.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
+              "RelativeDocumentMoniker": "Ucenik Forme\\UcenikForm.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Ucenik Forme\\UcenikForm.cs",
+              "RelativeToolTip": "Ucenik Forme\\UcenikForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:08:17.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpisiNeopravdaniForm.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\UpisiNeopravdaniForm.cs",
+              "RelativeDocumentMoniker": "Profesor forme\\UpisiNeopravdaniForm.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\UpisiNeopravdaniForm.cs",
+              "RelativeToolTip": "Profesor forme\\UpisiNeopravdaniForm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-14T14:06:55.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ProfesorUcenikProfil.cs",
               "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\ProfesorUcenikProfil.cs",
               "RelativeDocumentMoniker": "Profesor forme\\ProfesorUcenikProfil.cs",
               "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\ProfesorUcenikProfil.cs",
               "RelativeToolTip": "Profesor forme\\ProfesorUcenikProfil.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAkwE0AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T13:42:10.731Z",
+              "WhenOpened": "2026-05-14T14:06:52.451Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OdeljenjeProfilProf.cs",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\OdeljenjeProfilProf.cs",
-              "RelativeDocumentMoniker": "Profesor forme\\OdeljenjeProfilProf.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\OdeljenjeProfilProf.cs",
-              "RelativeToolTip": "Profesor forme\\OdeljenjeProfilProf.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAIAwwCEAAAAAAAAAAAAAAA==",
+              "Title": "BaseFormProfesor.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\BaseFormProfesor.cs",
+              "RelativeDocumentMoniker": "Profesor forme\\BaseFormProfesor.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\BaseFormProfesor.cs",
+              "RelativeToolTip": "Profesor forme\\BaseFormProfesor.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowAYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T13:41:50.796Z",
+              "WhenOpened": "2026-05-14T14:06:48.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "UpisiOcenuForm.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\UpisiOcenuForm.cs",
+              "RelativeDocumentMoniker": "Profesor forme\\UpisiOcenuForm.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\UpisiOcenuForm.cs",
+              "RelativeToolTip": "Profesor forme\\UpisiOcenuForm.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T13:41:03.123Z",
+              "WhenOpened": "2026-05-14T14:06:57.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "RegistarForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\RegistarForm.cs",
-              "RelativeDocumentMoniker": "RegistarForm.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\RegistarForm.cs [Design]",
-              "RelativeToolTip": "RegistarForm.cs [Design]",
+              "Title": "ProfesorForm.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\ProfesorForm.cs",
+              "RelativeDocumentMoniker": "Profesor forme\\ProfesorForm.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\ProfesorForm.cs",
+              "RelativeToolTip": "Profesor forme\\ProfesorForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T13:28:52.693Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-14T14:06:51.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\LoginForm.cs [Design]",
-              "RelativeToolTip": "LoginForm.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "OdeljenjeProfilProf.cs",
+              "DocumentMoniker": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\OdeljenjeProfilProf.cs",
+              "RelativeDocumentMoniker": "Profesor forme\\OdeljenjeProfilProf.cs",
+              "ToolTip": "C:\\Users\\vasic\\source\\repos\\Maturski\\Profesor forme\\OdeljenjeProfilProf.cs",
+              "RelativeToolTip": "Profesor forme\\OdeljenjeProfilProf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-09T13:28:20.413Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-05-14T14:06:50.054Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -11,6 +11,10 @@ namespace Maturski.Profesor_forme
         public ProfesorUcenikProfil(string? imeUcenik, string? id_ucenik, string? odeljenje)
         {
             InitializeComponent();
+
+            this.Text = "esDnevnik";
+            this.Icon = new Icon(FM.ikonica);
+
             labelImeUcenik.Text = "Ucenik: " + imeUcenik;
             odeljenje_ = odeljenje;
             id_ucenik_ = id_ucenik;

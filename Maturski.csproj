@@ -6,14 +6,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Assets\Ikonica_1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.OleDb" Version="10.0.5" />
+    <Content Include="Assets\Ikonica_1.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <PackageReference Include="System.Data.OleDb" Version="10.0.5" />
   </ItemGroup>
 
   <ItemGroup>

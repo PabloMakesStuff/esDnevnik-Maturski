@@ -13,6 +13,9 @@ namespace Maturski.Profesor_forme
             InitializeComponent();
             _odeljenje = odeljenje;
 
+            this.Text = "esDnevnik";
+            this.Icon = new Icon(FM.ikonica);
+
             var query = "SELECT ucenik.ime, ucenik.prezime " +
                         "FROM ucenik " +
                         "WHERE ucenik.odeljenje = ? ";

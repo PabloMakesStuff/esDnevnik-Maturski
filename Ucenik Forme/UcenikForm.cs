@@ -9,6 +9,8 @@ namespace Maturski
         public UcenikForm()
         {
             InitializeComponent();
+            this.Text = "esDnevnik";
+            this.Icon = new Icon(FM.ikonica);
         }
 
         // dodati upitnici da bi kompajler ucutao

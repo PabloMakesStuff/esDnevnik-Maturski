@@ -18,6 +18,7 @@ namespace Maturski
     // pomocne funkcije za estetiku
     public static class FM
     {
+        public static string ikonica = "C:/Users/vasic/source/repos/Maturski/Assets/Ikonica_1.ico";
         // f1 = trenutna forma, f2 = forma koja se otvara
         public static void OpenForm(Form f1, Form f2)
         {

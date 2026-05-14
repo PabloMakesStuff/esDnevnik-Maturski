@@ -9,6 +9,10 @@ namespace Maturski.Profesor_forme
         public OdeljenjeProfilProf(string? odeljenje)
         {
             InitializeComponent();
+
+            this.Text = "esDnevnik";
+            this.Icon = new Icon(FM.ikonica);
+
             _odeljenje = odeljenje;
             label1.Text = "Odeljenje: " + odeljenje;
 

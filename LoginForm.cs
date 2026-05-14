@@ -9,6 +9,8 @@ namespace Maturski
         {
             InitializeComponent();
 
+            this.Text = "Login";
+            this.Icon = new Icon(FM.ikonica);
             LoginPanel.BackColor = ColorTranslator.FromHtml("#50A381");
         }
         public static int ID_ucenik { get; set; }

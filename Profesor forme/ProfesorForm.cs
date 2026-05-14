@@ -8,6 +8,8 @@ namespace Maturski.Profesor_forme
         public ProfesorForm()
         {
             InitializeComponent();
+            this.Text = "esDnevnik";
+            this.Icon = new Icon(FM.ikonica);
         }
         private void ProfesorForm_Load(object sender, EventArgs e)
         {

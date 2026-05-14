@@ -10,9 +10,6 @@ namespace Maturski
             InitializeComponent();
 
             LoginPanel.BackColor = ColorTranslator.FromHtml("#50A381");
-            //privremeno za testiranje, OBAVEZNO OBRISI KASNIJE!!!!!!!!!
-            Email.Text = "zk@gmail.com";
-            Sifra.Text = "12345";
         }
         public static int ID_ucenik { get; set; }
         public static int ID_profesor { get; set; }
@@ -46,7 +43,6 @@ namespace Maturski
                         new OleDbParameter("id", refId)
                     );
 
-                    //UcenikForm f = new UcenikForm(ucenik);
                     ID_ucenik = refId;
                     FM.OpenForm(this, new UcenikForm());
                 }
@@ -58,7 +54,6 @@ namespace Maturski
                         new OleDbParameter("id", refId)
                     );
 
-                    //ProfesorForm f = new ProfesorForm(profesor);
                     ID_profesor = refId;
                     FM.OpenForm(this, new ProfesorForm());
                 }

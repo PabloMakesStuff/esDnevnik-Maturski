@@ -32,7 +32,6 @@ namespace Maturski.Profesor_forme
                 string? prezime = row["Prezime"].ToString();
                 string? id_ucenik = row["id_ucenik"].ToString();
 
-                // ovaj ubac stringa u funkciju izgleda ruzno ali je prostiji -_-
                 tablePanelChild.Controls.Add(new UcenikProfilIndividuo(ime + " " + prezime, id_ucenik, odeljenje));
             }
         }

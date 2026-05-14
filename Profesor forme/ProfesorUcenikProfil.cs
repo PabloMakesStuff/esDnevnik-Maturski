@@ -4,12 +4,8 @@ using System.Data.OleDb;
 
 namespace Maturski.Profesor_forme
 {
-    // svakome kome cita sledeci kod, izvinjavam se
-    // veoma je kasno i ne mogu da razmisljam najbolje
-    // plus zelim da iskoristim kod koji sam vec napisao maksimalno
     public partial class ProfesorUcenikProfil : Form
     {
-        // geeksforgeeks goat
         public string? odeljenje_ = null;
         public string? id_ucenik_ = null;
         public ProfesorUcenikProfil(string? imeUcenik, string? id_ucenik, string? odeljenje)
@@ -36,7 +32,7 @@ namespace Maturski.Profesor_forme
 
             tableLayout.Visible = true;
             flowPanel.Visible = false;
-            //kopirano iz pocetak u ucenikform cisto za test
+
             string query = "SELECT o.broj_oc, o.opis, p.nazivPred " +
                            "FROM ocene o " +
                            "INNER JOIN predmeti p ON o.ID_predmet = p.ID_predmet " +
@@ -64,7 +60,6 @@ namespace Maturski.Profesor_forme
 
             FM.AddCenteredControl(new IzostanciListaVrh(), flowPanel);
 
-            // direktno recikliran kod iz ucenikfrom izostancibtn
             string query = "SELECT p.nazivPred, i.status, i.ID_ucenik " +
                            "FROM izostanci i, predmeti p " +
                            "WHERE i.id_predmet = p.id_predmet " +

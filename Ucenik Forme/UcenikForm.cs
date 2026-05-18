@@ -45,7 +45,7 @@ namespace Maturski
             panelMain.Controls.Clear();
             FM.AddCenteredControl(new OceneListaVrh(), panelMain);
 
-            // zatim, trazi ocene prema ucenikid, predmet i polugodiste, pa ih prikazuje
+            // zatim, trazi ocene prema ID_ucenik, predmet i polugodiste, pa ih prikazuje
             // ako nema ocenu (tojkest null) onda ne prikazuje nista (zbog toga : null)
 
             //jos jedna bitna stvar, ovaj upit sortira bazu pa zbog toga mogu da radim shenanigans
@@ -63,11 +63,11 @@ namespace Maturski
 
             foreach (DataRow row in dt.Rows)
             {
-                string predmet = row["nazivPred"].ToString();
+                string? predmet = row["nazivPred"].ToString();
                 int polugodiste = Convert.ToInt32(row["polugodiste"]);
                 int ocena = Convert.ToInt32(row["broj_oc"]);
 
-                //ako predmet nije upisan, onda upisuje default vrednosti
+                //ako predmet nije upisan, onda upisuje null vrednosti
                 if (!predmeti.ContainsKey(predmet))
                     predmeti[predmet] = (0, 0, 0, 0);
 

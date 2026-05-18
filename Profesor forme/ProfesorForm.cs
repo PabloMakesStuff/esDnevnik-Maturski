@@ -15,8 +15,7 @@ namespace Maturski.Profesor_forme
         {
             var dt = Database.execQuery(
                 "SELECT ime FROM profesor WHERE id_profesor = ?",
-                new OleDbParameter("?", LoginForm.ID_profesor)
-                );
+                new OleDbParameter("?", LoginForm.ID_profesor));
 
             string ime = "";
 
